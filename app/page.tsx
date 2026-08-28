@@ -9,6 +9,18 @@ import { ExternalLink, Code, X, Flame, Rocket, Sparkles, GraduationCap, ChevronD
 const DATA = {
   projects: [
     {
+      id: 'smart-school',
+      title: 'Smart School Management System (SSMS)',
+      status: 'Under Progress',
+      description: 'Enterprise-grade, multi-role School Management System built with Next.js 14, Prisma ORM, Supabase PostgreSQL, and Tailwind CSS.',
+      category: 'fullstack',
+      tags: ['Next.js', 'TypeScript', 'Prisma', 'Supabase', 'Tailwind CSS', 'PostgreSQL'],
+      image: '/images/Smart-School.png',
+      link: '#',
+      github: 'https://github.com/deepthi-mahendran/Smart-School',
+      detail: 'Enterprise-grade, multi-role School Management System built with Next.js 14, Prisma ORM, Supabase PostgreSQL, and Tailwind CSS. Features 4 dedicated role-based portals (Admin, Teacher, Student, Parent), real-time timetable subscriptions, client-side PDF document generation (@react-pdf/renderer), and subject-scoped access control.'
+    },
+    {
       id: 'web-portfolio',
       title: 'Personal Web Portfolio 🚀',
       description: 'Modern, high-performance personal portfolio built with Next.js App Router, React, TypeScript, and Prisma.',
