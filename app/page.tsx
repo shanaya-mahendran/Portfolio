@@ -244,7 +244,7 @@ export default function Home() {
   useEffect(() => {
     const phrases = [
       "Hi, I'm Deepthi Mahendran.",
-      'Aspiring Full-Stack Developer.',
+      'Full-Stack Developer.',
       'Tech Enthusiast.',
       'Open Source Contributor.'
     ]
@@ -361,7 +361,7 @@ export default function Home() {
               className="hero-sub" style={{ animation: 'none', opacity: 1 }}
             >
               <p style={{ fontWeight: 600, color: 'var(--text-primary)', marginBottom: '12px' }}>
-                Aspiring Full-Stack Developer | Tech Enthusiast | Changemaker
+                Full-Stack Developer | Tech Enthusiast | Changemaker
               </p>
               <p style={{ marginBottom: '12px' }}>
                 Building products that make a difference. One line of code at a time.

@@ -52,7 +52,7 @@ const jsonLd = {
   name: 'Deepthi Mahendran',
   url: 'https://deepthi-paul.vercel.app',
   jobTitle: 'Full-Stack Developer',
-  description: 'Aspiring Full-Stack Developer & Tech Enthusiast building modern web applications.',
+  description: 'Full-Stack Developer & Tech Enthusiast building modern web applications.',
   sameAs: [
     'https://github.com/deepthi-mahendran',
     // Add LinkedIn or Twitter here if applicable
