@@ -32,18 +32,6 @@ const DATA = {
   ],
   projects: [
     {
-      id: 'smart-school',
-      title: 'Smart School Management System (SSMS)',
-      status: 'Under Progress',
-      description: 'Enterprise-grade, multi-role School Management System built with Next.js 14, Prisma ORM, Supabase PostgreSQL, and Tailwind CSS.',
-      category: 'fullstack',
-      tags: ['Next.js', 'TypeScript', 'Prisma', 'Supabase', 'Tailwind CSS', 'PostgreSQL'],
-      image: '/images/Smart-School.png',
-      link: '#',
-      github: 'https://github.com/deepthi-mahendran/Smart-School',
-      detail: 'Enterprise-grade, multi-role School Management System built with Next.js 14, Prisma ORM, Supabase PostgreSQL, and Tailwind CSS. Features 4 dedicated role-based portals (Admin, Teacher, Student, Parent), real-time timetable subscriptions, client-side PDF document generation (@react-pdf/renderer), and subject-scoped access control.'
-    },
-    {
       id: 'cabXpert',
       title: 'CabXpert — Vehicle Reservation System',
       description: 'Online vehicle reservation system automating bookings, driver & car management, and billing.',
