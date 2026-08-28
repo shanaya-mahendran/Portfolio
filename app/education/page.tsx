@@ -67,7 +67,7 @@ const EDUCATION_DATA = [
     date: 'Sep 2025 – Present',
     degree: 'BSc in Computer Science',
     institution: 'University of the People',
-    cgpa: 'CGPA: 3.97',
+    cgpa: 'CGPA: 3.96',
     description: 'Expanding knowledge in core theoretical computer science fundamentals including algorithms, data structures, discrete mathematics, and software engineering principles. This program is broadening my perspective by complementing practical IT skills with strong theoretical foundations.',
     completed: UOP_COMPLETED,
     inProgress: UOP_INPROGRESS,
