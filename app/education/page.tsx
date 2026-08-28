@@ -105,6 +105,23 @@ const EDUCATION_DATA = [
 
 const PROGRAMMES = [
   {
+    id: 'ieee-r10',
+    title: 'IEEE Computer Society R10 Summer School 2026',
+    org: 'IEEE Computer Society Sri Lanka Chapter | University of Moratuwa, Sri Lanka',
+    period: 'September 2026',
+    status: 'In Progress',
+    statusColor: '#8B45BA',
+    icon: '💻',
+    description: 'Selected as a participant for Sri Lanka’s first-ever IEEE Computer Society Region 10 Summer School, a four-day intensive programme organised in collaboration with the IEEE Computer Society Sri Lanka Chapter. This competitive programme brought together IEEE members from across the Asia-Pacific region for a deep dive into the Trustworthy Smart Ecosystem. The curriculum balanced theoretical foundations with extensive hands-on practice, covering the full spectrum of building reliable and secure intelligent systems.',
+    activities: [
+      'Attended foundations and practical sessions covering IoT, connected smart systems, and cybersecurity essentials',
+      'Participated in specialized workshops on Trustworthy AI and hands-on AI development without heavy coding',
+      'Collaborated in a team for the Mini Ideathon, pitching solutions for the Trustworthy Smart Ecosystem Challenge',
+      'Engaged in group project development to design, test, and demonstrate a proposed smart solution',
+      'Gained practical experience in IoT, AI, Cybersecurity, collaborative project design, and rapid prototyping',
+    ],
+  },
+  {
     id: 'omlas',
     title: 'OMLAS Champion 2026',
     org: 'One Million Leaders Asia (OMLAS) | South & Southeast Asia',
@@ -122,8 +139,8 @@ const PROGRAMMES = [
     ],
   },
   {
-    id: 'nepd',
-    title: 'National Entrepreneurship Development Programme (NEPD) – Phase 3',
+    id: 'nedp',
+    title: 'National Entrepreneurship Development Programme (NEDP) – Phase 3',
     org: 'National Innovation Agency (NIA) | University of Moratuwa | Union Bank of Colombo',
     period: 'June 2026 – Present',
     status: 'Almost Completed',
