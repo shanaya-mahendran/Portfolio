@@ -1,11 +1,31 @@
-# Web Portfolio
+# Deepthi Mahendran — Personal Web Portfolio
 
-This website is the personal portfolio of Deepthi Mahendran. It contains information about her projects, skills, education, and ways to contact her. 
+> Deepthi Mahendran is a Full-Stack Developer, Tech Enthusiast, and Open-Source Contributor. She builds modern, high-performance web applications using Next.js, React, TypeScript, Python (FastAPI), Prisma ORM, Supabase, and PostgreSQL.
 
-## Structure
-- [Home](https://deepthi-mahendran.vercel.app/)
-- [About](https://deepthi-mahendran.vercel.app/about)
-- [Projects](https://deepthi-mahendran.vercel.app/projects)
-- [Skills](https://deepthi-mahendran.vercel.app/skills)
-- [Education](https://deepthi-mahendran.vercel.app/education)
-- [Contact](https://deepthi-mahendran.vercel.app/contact)
+## Core Navigation & Links
+- Main Website: https://deepthi-paul.vercel.app/
+- About: https://deepthi-paul.vercel.app/about
+- Projects: https://deepthi-paul.vercel.app/projects
+- Skills & Tech Stack: https://deepthi-paul.vercel.app/skills
+- Academic Journey & Education: https://deepthi-paul.vercel.app/education
+- Contact: https://deepthi-paul.vercel.app/contact
+- GitHub Profile: https://github.com/deepthi-mahendran
+- Full Plain-Text Knowledge Dump: https://deepthi-paul.vercel.app/llms-full.txt
+
+## Key Information Overview
+- **Role**: Full-Stack Developer & Tech Enthusiast
+- **Education**: 
+  - BSc in Information Technology at University of Moratuwa (GPA: 3.76)
+  - BSc in Computer Science at University of the People (CGPA: 3.96)
+- **Primary Tech Stack**: Next.js, React, TypeScript, JavaScript, Python, FastAPI, Node.js, Express, Prisma ORM, Supabase, PostgreSQL, MySQL, SQLite, Docker, Tailwind CSS.
+- **Featured Projects**:
+  - Smart School Management System (SSMS): Enterprise-grade multi-role school management system (Admin, Teacher, Student, Parent) built with Next.js 14, Prisma, Supabase PostgreSQL, Tailwind CSS, and client-side PDF document generation.
+  - Sara: Full-stack e-commerce platform built with FastAPI + PostgreSQL, Docker, FAISS vector search, WebSockets, and Vite frontend.
+  - CabXpert: Vehicle reservation system using Java EE (Jersey JAX-RS), MySQL, JDBC, and Bootstrap.
+  - Elegant Notes: Offline-first PWA with Supabase real-time sync and Tiptap rich editor.
+  - PTET Web: Open-source contribution (43 merged PRs) building backend APIs and full-stack features.
+- **Programmes & Leadership**:
+  - IEEE Computer Society R10 Summer School 2026 (Participant, University of Moratuwa)
+  - OMLAS Champion 2026 (One Million Leaders Asia)
+  - National Entrepreneurship Development Programme (NEDP Phase 3)
+- **Achievements**: First Place Gold Medalist – 1st Alliance Cup Full Contact Karate 2025 (UWMF-Japan)

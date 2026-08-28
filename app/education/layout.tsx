@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Education & Certifications | Deepthi Mahendran",
     description: "Academic journey and professional certifications.",
-    url: "https://deepthimahendran.vercel.app/education",
+    url: "https://deepthi-paul.vercel.app/education",
   },
   twitter: {
     card: "summary_large_image",

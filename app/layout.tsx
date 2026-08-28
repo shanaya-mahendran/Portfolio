@@ -52,11 +52,51 @@ const jsonLd = {
   name: 'Deepthi Mahendran',
   url: 'https://deepthi-paul.vercel.app',
   jobTitle: 'Full-Stack Developer',
-  description: 'Full-Stack Developer & Tech Enthusiast building modern web applications.',
+  description: 'Full-Stack Developer & Tech Enthusiast building modern web applications using Next.js, React, TypeScript, Python, Prisma, and Supabase.',
   sameAs: [
     'https://github.com/deepthi-mahendran',
-    // Add LinkedIn or Twitter here if applicable
+    'https://deepthi-paul.vercel.app'
   ],
+  knowsAbout: [
+    'Full-Stack Web Development',
+    'Next.js',
+    'React',
+    'TypeScript',
+    'JavaScript',
+    'Python',
+    'FastAPI',
+    'Java',
+    'Prisma ORM',
+    'Supabase',
+    'PostgreSQL',
+    'MySQL',
+    'SQLite',
+    'Docker',
+    'Tailwind CSS',
+    'REST APIs',
+    'Progressive Web Apps (PWA)',
+    'Software Engineering'
+  ],
+  alumniOf: [
+    {
+      '@type': 'EducationalOrganization',
+      name: 'University of Moratuwa'
+    },
+    {
+      '@type': 'EducationalOrganization',
+      name: 'University of the People'
+    }
+  ],
+  memberOf: [
+    {
+      '@type': 'Organization',
+      name: 'IEEE Computer Society'
+    },
+    {
+      '@type': 'Organization',
+      name: 'OMLAS (One Million Leaders Asia)'
+    }
+  ]
 }
 
 export const viewport: Viewport = {

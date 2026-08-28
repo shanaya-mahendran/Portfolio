@@ -1,0 +1,224 @@
+# Deepthi Mahendran — Complete Personal Portfolio Knowledge Base
+
+This file provides the complete, unabridged plain-text knowledge base for Deepthi Mahendran's personal web portfolio (https://deepthi-paul.vercel.app/). It is designed for artificial intelligence models, search bots, and LLM agent crawlers.
+
+---
+
+## 1. Biography & Summary
+- **Name**: Deepthi Mahendran
+- **Title**: Full-Stack Developer | Tech Enthusiast | Open Source Contributor | Changemaker
+- **Website**: https://deepthi-paul.vercel.app/
+- **GitHub**: https://github.com/deepthi-mahendran
+- **Philosophy**: Building accessible, modern technology that serves people and creates real-world impact.
+
+---
+
+## 2. Technical Skills & Tech Stack
+
+### Frontend Engineering
+- **Technologies**: Next.js (App Router), React.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Vanilla CSS, Framer Motion, Responsive Web Design, Progressive Web Apps (PWA).
+
+### Backend Engineering & Databases
+- **Technologies**: Node.js, Express.js, Python, FastAPI, Java (Java EE, Jersey JAX-RS), PostgreSQL, MySQL, SQLite, Supabase, Prisma ORM, Sequelize ORM, RESTful APIs, WebSockets, JWT Authentication.
+
+### DevOps, Tools & Testing
+- **Tools**: Git, GitHub, Docker, VS Code, Vite, Vitest, Postman, Vercel, FAISS Vector Search.
+
+### Computer Science & Programming Languages
+- **Languages**: JavaScript, TypeScript, Python, Java, SQL, PHP, HTML/CSS.
+- **Concepts**: Object-Oriented Programming (OOP), Data Structures & Algorithms, System Architecture, Multithreading, Socket Programming, Stream API, Functional Programming, Generic Classes, MVC Architecture.
+
+---
+
+## 3. Projects Catalog
+
+### Smart School Management System (SSMS)
+- **Status**: Under Progress / Active Development
+- **Category**: Full-Stack Web Application
+- **Tech Stack**: Next.js 14, TypeScript, Prisma ORM, Supabase PostgreSQL, Tailwind CSS, @react-pdf/renderer
+- **GitHub**: https://github.com/deepthi-mahendran/Smart-School
+- **Description**: An enterprise-grade, multi-role School Management System featuring 4 dedicated portals (Admin, Teacher, Student, Parent).
+- **Key Features**:
+  - Role-based cookie session security with bcryptjs.
+  - Live analytics dashboard for total students, faculty, fee metrics, and area charts.
+  - Student registrar, atomic enrollment transactions, and bulk grade promotion.
+  - Interactive schedule builder with Supabase Realtime live grid synchronization.
+  - Subject-scoped attendance marking with absence reason tracking.
+  - Exam registry with auto-calculated letter grades (A+ to F) and 4.0 GPA computation.
+  - Financial suite: fee structure definitions, bulk invoice generation, scholarship awards, and offline payment recording.
+  - Client-side PDF generation engine for QR-coded Student ID cards and official Academic Report Cards.
+
+### Sara — Modern E-Commerce Platform
+- **Status**: Under Progress / Active Development
+- **Category**: Full-Stack Web Application
+- **Tech Stack**: FastAPI, PostgreSQL, JavaScript, Docker, Vite, Vitest, WebSockets, FAISS, Transformers
+- **Live Demo**: https://sara-001.vercel.app/
+- **GitHub**: https://github.com/deepthi-mahendran/Sara
+- **Description**: Full-stack e-commerce platform featuring 32 real products, responsive 4-column grid, JWT authentication, AI visual similarity search (FAISS + Transformers), real-time shared cart via WebSockets, multi-step checkout, PWA support, and 117 test files (988 unit tests) with Vitest.
+
+### CabXpert — Vehicle Reservation System
+- **Status**: Completed
+- **Category**: Full-Stack / Java Enterprise
+- **Tech Stack**: Java EE, Jersey (JAX-RS), MySQL, JDBC, Maven, Bootstrap
+- **GitHub**: https://github.com/Deepthi-Mahendran
+- **Description**: Automated vehicle reservation system built for Mega City Cab using Java RESTful Web Services and Test-Driven Development (TDD). Manages driver and car scheduling, automated booking workflows, and billing management.
+
+### Elegant Notes — PWA
+- **Status**: Completed
+- **Category**: Web Application / PWA
+- **Tech Stack**: React, TypeScript, Supabase, Tiptap Editor, Zustand
+- **Live Demo**: https://elegant-notes-demo.vercel.app/
+- **GitHub**: https://github.com/deepthi-mahendran/elegant-notes
+- **Description**: Offline-first note-taking Progressive Web App with Service Worker caching, Supabase real-time cloud synchronization, secure authentication, and a rich Tiptap editor with complex formatting.
+
+### PTET Web (Social Summer of Code 2026)
+- **Status**: Completed / Open Source Contribution
+- **Category**: Open Source
+- **Tech Stack**: Node.js, Express, PostgreSQL, Sequelize
+- **GitHub PRs**: https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Adeepthi-mahendran
+- **Description**: Open-source contributor with 43+ merged pull requests. Built backend APIs (Daily Tip, Study Materials CRUD, Recommendations, Bookmark), implemented full-stack features, and improved dark/light theme accessibility.
+
+### Personal Web Portfolio 🚀
+- **Status**: Completed
+- **Category**: Full-Stack Web Application
+- **Tech Stack**: Next.js App Router, React, TypeScript, Prisma, Framer Motion, Vanilla CSS
+- **Live Demo**: https://deepthi-paul.vercel.app/
+- **GitHub**: https://github.com/deepthi-mahendran/Portfolio
+- **Description**: Modern, high-performance personal portfolio featuring Framer Motion page transitions, an interactive HTML5 Canvas hero particle networking simulation, a glassmorphism dark/light theme engine, Prisma database schema integration, and 100 Lighthouse performance scores.
+
+### My Educational Website
+- **Status**: Completed
+- **Category**: Web Application
+- **Tech Stack**: HTML5, CSS3, JavaScript, Responsive Design
+- **Live Demo**: https://my-web-project-iaii.vercel.app/
+- **GitHub**: https://github.com/deepthi-mahendran/my-web-project-iaii
+- **Description**: Clean single-page static portfolio built with pure HTML, CSS, and JavaScript.
+
+### SLIA Database Management
+- **Status**: Completed
+- **Category**: Data Management / Database
+- **Tech Stack**: SQLite, Data Management, Google Forms
+- **Description**: Developed and maintained an SQLite database for member practice registration of 700+ members at Sri Lanka Institute of Architects. Processed member updates via Google Forms and coordinated communications.
+
+### Learning Journal Projects (Day 01 to Day 22)
+- **Day 01**: Java Basics — Quiz Game (CLI quiz with input validation, instant feedback, score summary).
+- **Day 02**: Java — Library Management System (HashMap inventory lookups, borrow/return workflows).
+- **Day 03**: Java OOP — Student Management System (Encapsulation, static data control, duplicate ID validation).
+- **Day 04**: Java — Stock Analysis (Primitive arrays vs ArrayList benchmark, average price, max price, cumulative sum).
+- **Day 05**: Java — University Enrollment & Grade System (Course registration capacity check, grade assignments 0-100, GPA).
+- **Day 06**: Java — Car Rental Agency System (Polymorphic vehicle rental engine, interfaces, class inheritance).
+- **Day 07**: Java Swing GUI — Student Management System (Tabbed interface, CRUD operations, auto IDs, 4.0 GPA scale).
+- **Day 08**: Python — CLI & GUI Calculator Suite (Dual-mode CLI/Tkinter calculator with division-by-zero handling).
+- **Day 09**: Java Swing GUI — Library Management System (Object serialization, title/author search filtering, stock control).
+- **Day 10**: Java Swing GUI — Car Rental Agency System (GUI vehicle inventory, polymorphic storage).
+- **Day 11**: Python — TaskFlow Pro To-Do List (CustomTkinter GUI, persistent file storage, dark/light themes).
+- **Day 12**: Java — Functional Programming & Stream API (Lambda expressions, stream pipelines, Optional, parallel stream benchmarks).
+- **Day 13**: Python — Number Guessing Game (Tkinter GUI, hint engine, attempt counter, keyboard shortcuts).
+- **Day 14**: Python — Secure Password Generator (Secrets module, length slider 8-50, 1-click clipboard copy).
+- **Day 15**: Python — Rock Paper Scissors Game (CustomTkinter arcade game, AI opponent, score persistence).
+- **Day 16**: Java — Text Analysis Tool (HashMap/HashSet text frequency analysis, word/character counts).
+- **Day 17**: Python — Weather App (Open-Meteo REST API, geocoding city lookup, WMO weather emoji mapping).
+- **Day 18**: Java Swing GUI — Generic Library Catalog System (Java Generics `Catalog<T>`, CardLayout navigation).
+- **Day 19**: Java Swing GUI — Multithreaded Clock Application (Thread synchronization, daemon threads, `invokeLater`).
+- **Day 20**: Java Swing GUI — E-Commerce System (Product catalog, shopping cart, stock management, order pipelines).
+- **Day 21**: Java — Online Chat Application (TCP socket programming, multi-client support, multithreaded handlers).
+- **Day 22**: Java Swing — Weather Application (MVC architecture, OpenWeatherMap API, Gson JSON parsing, 5-day forecast).
+
+---
+
+## 4. Academic Journey & Education
+
+### University of Moratuwa
+- **Degree**: BSc in Information Technology
+- **Duration**: Jan 2026 – Present
+- **Academic Standing**: GPA: 3.76
+- **Completed Semester**: Semester 2025S1
+- **In Progress Semester**: Semester 2025S2
+- **Completed Courses (2025S1)**:
+  - `ITE1123`: Fundamentals of Programming (Grade: A)
+  - `ITE1213`: Computer Systems (Grade: A)
+  - `ITE1713`: Web Design (Grade: B)
+  - `ITE1813`: Mathematics and Statistics for IT (Grade: A-)
+  - `ITE1913`: Communication Skills Development (Grade: A+)
+  - `ITE1923`: ICT Skills and Applications (Grade: A)
+- **In Progress Courses (2025S2)**:
+  - `ITE1133`: Visual Applications (Grade: Pending)
+  - `ITE1223`: System & Design Paradigms (Grade: Pending)
+  - `ITE1413`: Fundamentals of Databases (Grade: Pending)
+  - `ITE1723`: Web Programming (Grade: Pending)
+  - `ITE1933`: Technical Writing (Grade: Pending)
+  - `ITE1943`: ICT Project (Grade: Pending)
+
+### University of the People
+- **Degree**: BSc in Computer Science
+- **Duration**: Sep 2025 – Present
+- **Academic Standing**: CGPA: 3.96
+- **Completed Courses**:
+  - `UNIV 1001`: Online Education Strategies (Grade: A)
+  - `ENGL 1102`: English Composition 2 (Grade: A)
+  - `CS 1111`: Introduction to Computer Science (Grade: A)
+  - `CS 1101`: Programming Fundamentals (Grade: A+)
+  - `PSYC 1504`: Introduction to Psychology (Grade: A)
+  - `MATH 1201`: College Algebra (Grade: A-)
+  - `PHIL 1404`: Introduction to Global Ethics (Grade: A+)
+  - `CS 1105`: Digital Electronics & Computer Architecture (Grade: A)
+  - `MATH 1280`: Introduction to Statistics (Grade: A+)
+  - `CS 1102`: Programming 1 (Grade: A+)
+  - `CS 2203`: Databases 1 (Grade: A)
+  - `COM 2001`: Professional Communication (Grade: A+)
+  - `ENVS 1301`: Introduction to Environmental Sciences (Grade: A-)
+  - `CS 1103`: Programming 2 (Grade: A)
+  - `CS 2204`: Communications and Networking (Grade: A)
+- **In Progress Courses**:
+  - `HIST 1421`: Greek and Roman Civilization (Grade: In Progress)
+  - `PHIL 1402`: Introduction to Philosophy (Grade: In Progress)
+  - `CS 2205`: Web Programming 1 (Grade: In Progress)
+  - `CS 2401`: Software Engineering 1 (Grade: In Progress)
+
+### G.C.E. Advanced Level
+- **Year**: 2024
+- **School**: St. Anne's Girls' School
+- **Description**: Completed higher secondary education preparing for degree studies in computing.
+
+### G.C.E. Ordinary Level
+- **Year**: 2021
+- **School**: Alexandra College
+- **Description**: Completed secondary education in commerce stream.
+
+---
+
+## 5. Leadership Programmes, Volunteering & Achievements
+
+### IEEE Computer Society R10 Summer School 2026
+- **Period**: September 2026
+- **Status**: In Progress
+- **Organization**: IEEE Computer Society Sri Lanka Chapter | University of Moratuwa, Sri Lanka
+- **Overview**: Four-day intensive summer school covering Trustworthy Smart Ecosystems, IoT, AI, Cybersecurity, Mini Ideathon, and team project development.
+
+### OMLAS Champion 2026
+- **Period**: August 2026 – Present
+- **Status**: In Progress
+- **Organization**: One Million Leaders Asia (OMLAS) | South & Southeast Asia
+- **Overview**: International leadership program focused on Personal Leadership, Sustainable Development, Social Innovation, Community Leadership, and Collaboration.
+
+### National Entrepreneurship Development Programme (NEDP) – Phase 3
+- **Period**: June 2026 – Present
+- **Status**: Almost Completed
+- **Organization**: National Innovation Agency (NIA) | University of Moratuwa | Union Bank of Colombo
+- **Overview**: Flagship national entrepreneurship programme providing training in business model development, market validation, financial planning, and venture pitching.
+
+### Y2NPro Social Media Coordinator
+- **Period**: Feb 2026 – Present
+- **Organization**: Y2NPro Project | IEEE Young Professionals Sri Lanka
+- **Overview**: Managed social media presence across LinkedIn, Instagram, and Facebook for specialized tech learning initiatives.
+
+### First Place (Gold Medal) – 1st Alliance Cup Full Contact Karate 2025
+- **Date**: November 2025
+- **Organization**: United World Martial Arts Federation - Sri Lanka | Affiliated by UWMF-Japan
+- **Overview**: Gold Medal winner in Full Contact Karate at national level competition.
+
+---
+
+## 6. Contact Information
+- **Website Contact Form**: https://deepthi-paul.vercel.app/contact
+- **GitHub**: https://github.com/deepthi-mahendran
