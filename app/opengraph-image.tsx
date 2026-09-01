@@ -60,7 +60,7 @@ export default function OpenGraphImage() {
             marginBottom: '20px',
           }}
         >
-          Deepthi Mahendran
+          Shanaya Mahendran
         </div>
         <div
           style={{

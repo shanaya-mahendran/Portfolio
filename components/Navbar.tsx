@@ -62,7 +62,7 @@ export default function Navbar() {
       <nav className={`navbar ${isScrolled ? 'scrolled glass' : ''}`} id="navbar" style={{ padding: isScrolled ? '12px 0' : '20px 0' }}>
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Link href="/" className="nav-logo" onClick={closeMobile} style={{ fontSize: '1.5rem', fontWeight: 700, zIndex: 1001 }}>
-            Deepthi<span className="accent-text">.</span>
+            Shanaya<span className="accent-text">.</span>
           </Link>
           
           {/* Desktop Nav */}

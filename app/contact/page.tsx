@@ -8,10 +8,10 @@ export default function ContactPage() {
   const [submitting, setSubmitting] = useState(false)
 
   const contactLinks = [
-    { href: 'https://www.linkedin.com/in/deepthi-m081/', label: 'LinkedIn', icon: BriefcaseBusiness },
-    { href: 'https://github.com/deepthi-mahendran', label: 'GitHub', icon: Code2 },
-    { href: 'mailto:deepthimahendran81@gmail.com', label: 'Email', icon: Mail },
-    { href: 'https://wa.me/94762079963?text=Hi%20Deepthi%2C%20I%20came%20across%20your%20portfolio!', label: 'WhatsApp', icon: MessageCircle },
+    { href: 'https://www.linkedin.com/in/shanaya-m081/', label: 'LinkedIn', icon: BriefcaseBusiness },
+    { href: 'https://github.com/shanaya-mahendran', label: 'GitHub', icon: Code2 },
+    { href: 'mailto:shanayamahendran81@gmail.com', label: 'Email', icon: Mail },
+    { href: 'https://wa.me/94762079963?text=Hi%20Shanaya%2C%20I%20came%20across%20your%20portfolio!', label: 'WhatsApp', icon: MessageCircle },
     { 
       href: '#', 
       label: 'Schedule a Call', 
@@ -21,7 +21,7 @@ export default function ContactPage() {
         // @ts-ignore
         if (typeof window !== 'undefined' && window.Calendly) {
           // @ts-ignore
-          window.Calendly.initPopupWidget({ url: 'https://calendly.com/pauldeepthi523' });
+          window.Calendly.initPopupWidget({ url: 'https://calendly.com/paulshanaya523' });
         }
       }
     },

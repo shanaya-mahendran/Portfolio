@@ -1,4 +1,4 @@
-# Deepthi Mahendran — Personal Web Portfolio 🚀
+# Shanaya Mahendran — Personal Web Portfolio 🚀
 
 A modern, high-performance personal portfolio built with Next.js App Router, React, and TypeScript. Designed to effectively showcase full-stack projects, academic journey, leadership programmes, volunteering initiatives, and technical skills with dynamic glassmorphism aesthetics and an accessible UX.
 
@@ -45,7 +45,7 @@ Make sure you have **Node.js** (v18+) installed.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/deepthi-mahendran/Portfolio.git
+   git clone https://github.com/shanaya-mahendran/Portfolio.git
    cd Portfolio
    ```
 

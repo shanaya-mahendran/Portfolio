@@ -184,7 +184,7 @@ export default function AboutPage() {
               Engineer, <span className="gradient-text">Builder</span>, Lifelong Learner.
             </motion.h1>
             <motion.p variants={itemVariants} style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '16px' }}>
-              I'm <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Deepthi Mahendran</span>, an undergraduate in Information Technology
+              I'm <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Shanaya Mahendran</span>, an undergraduate in Information Technology
               with a passion for <span style={{ color: 'var(--accent)' }}>full-stack development</span> and open source.
               I love turning complex problems into elegant, scalable solutions.
             </motion.p>

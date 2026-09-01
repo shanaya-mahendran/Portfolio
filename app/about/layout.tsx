@@ -1,17 +1,17 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | Deepthi Mahendran",
-  description: "About Deepthi Mahendran, Full-Stack Developer & Tech Enthusiast based in Chennai, India.",
+  title: "About | Shanaya Mahendran",
+  description: "About Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast based in Chennai, India.",
   openGraph: {
-    title: "About | Deepthi Mahendran",
-    description: "Learn more about Deepthi Mahendran, Full-Stack Developer & Tech Enthusiast building impactful web solutions.",
-    url: "https://deepthi-paul.vercel.app/about",
+    title: "About | Shanaya Mahendran",
+    description: "Learn more about Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast building impactful web solutions.",
+    url: "https://shanaya-paul.vercel.app/about",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About | Deepthi Mahendran",
-    description: "Learn more about Deepthi Mahendran, Full-Stack Developer & Tech Enthusiast building impactful web solutions.",
+    title: "About | Shanaya Mahendran",
+    description: "Learn more about Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast building impactful web solutions.",
   }
 };
 

@@ -14,7 +14,7 @@ const DATA = {
       tags: ['Next.js', 'TypeScript', 'Prisma', 'Supabase', 'Tailwind CSS', 'PostgreSQL'],
       image: '/images/Smart-School.png',
       link: '#',
-      github: 'https://github.com/deepthi-mahendran/Smart-School',
+      github: 'https://github.com/shanaya-mahendran/Smart-School',
       detail: 'Enterprise-grade, multi-role School Management System built with Next.js 14, Prisma ORM, Supabase PostgreSQL, and Tailwind CSS. Features 4 dedicated role-based portals (Admin, Teacher, Student, Parent), real-time timetable subscriptions, client-side PDF document generation (@react-pdf/renderer), and subject-scoped access control.'
     },
     {
@@ -26,7 +26,7 @@ const DATA = {
       tags: ['FastAPI', 'PostgreSQL', 'JavaScript', 'Docker', 'Vite', 'Vitest'],
       image: '/images/Sara.png',
       link: 'https://sara-001.vercel.app/',
-      github: 'https://github.com/deepthi-mahendran/Sara',
+      github: 'https://github.com/shanaya-mahendran/Sara',
       detail: 'Full-stack e-commerce platform featuring 32 real products, 4-column responsive grid, JWT auth, AI visual similarity search (FAISS + Transformers), real-time shared cart via WebSockets, multi-step checkout, PWA support, and 117 test files (988 unit tests) with Vitest.'
     }
   ],
@@ -39,7 +39,7 @@ const DATA = {
       tags: ['Java EE', 'Jersey (JAX-RS)', 'MySQL', 'JDBC', 'Maven', 'Bootstrap'],
       image: '/images/CarXpert.png',
       link: '#',
-      github: 'https://github.com/Deepthi-Mahendran',
+      github: 'https://github.com/Shanaya-Mahendran',
       detail: 'Automated vehicle reservation system built for Mega City Cab using Java RESTful Web Services (Jersey) and Test-Driven Development (TDD). Ensures high reliability, scalability, driver & car scheduling, and automated billing management.'
     },
     {
@@ -50,7 +50,7 @@ const DATA = {
       tags: ['React', 'TypeScript', 'Supabase', 'Tiptap', 'Zustand'],
       image: '/images/Elegant-Notes.webp',
       link: 'https://elegant-notes-demo.vercel.app/',
-      github: 'https://github.com/deepthi-mahendran/elegant-notes',
+      github: 'https://github.com/shanaya-mahendran/elegant-notes',
       detail: 'High-performance offline-first PWA with Service Workers, Supabase for real-time cloud sync, secure authentication, and a premium Tiptap editor with complex formatting.'
     },
     {
@@ -61,7 +61,7 @@ const DATA = {
       tags: ['Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'Social Summer of Code 2026', 'Collaborator'],
       image: '/images/ptet.png',
       link: 'https://github.com/AnthropicBots/ptet-web',
-      github: 'https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Adeepthi-mahendran',
+      github: 'https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Ashanaya-mahendran',
       detail: 'Open-source contributor with 43+ merged pull requests. Built backend APIs (Daily Tip, Study Materials CRUD, Recommendations, Bookmark), implemented full-stack features, and fixed dark/light theme support across the application.'
     },
     {
@@ -72,7 +72,7 @@ const DATA = {
       tags: ['HTML5', 'CSS3', 'JavaScript', 'Responsive'],
       image: '/images/iaii.png',
       link: 'https://my-web-project-iaii.vercel.app/',
-      github: 'https://github.com/deepthi-mahendran/my-web-project-iaii',
+      github: 'https://github.com/shanaya-mahendran/my-web-project-iaii',
       detail: 'A clean, single-page static portfolio website built with pure HTML to showcase projects and academic work. Deployed on Vercel with a streamlined workflow.'
     },
     {
@@ -82,8 +82,8 @@ const DATA = {
       category: 'fullstack',
       tags: ['Next.js', 'React', 'TypeScript', 'Prisma', 'Framer Motion', 'Vanilla CSS'],
       image: '/images/Portfolio.png',
-      link: 'https://deepthi-paul.vercel.app/',
-      github: 'https://github.com/deepthi-mahendran/Portfolio',
+      link: 'https://shanaya-paul.vercel.app/',
+      github: 'https://github.com/shanaya-mahendran/Portfolio',
       detail: 'Modern, high-performance personal portfolio built with Next.js (App Router), React, and TypeScript. Features Framer Motion page transitions, an interactive HTML5 Canvas hero particle networking simulation, a glassmorphism dark/light theme engine, Prisma database schema integration, and perfect 100 Lighthouse performance scores.'
     },
     {
@@ -104,8 +104,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'CLI', 'Input Validation'],
       image: '/images/Project01.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-01',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-01',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-01',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-01',
       detail: 'Built an interactive Java CLI quiz game featuring multiple-choice questions, input validation, real-time score tracking, instant answer feedback, and a comprehensive end-of-game performance summary.'
     },
     {
@@ -115,8 +115,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'HashMap', 'Data Structures', 'Exception Handling'],
       image: '/images/Project02.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-02',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-02',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-02',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-02',
       detail: 'Developed a robust Java console library management application utilizing HashMap for fast inventory lookups, supporting add/borrow/return workflows, stock tracking, and exception handling.'
     },
     {
@@ -126,8 +126,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'OOP', 'Encapsulation', 'Static Data'],
       image: '/images/Project03.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-03',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-03',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-03',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-03',
       detail: 'Demonstrated key object-oriented programming principles (encapsulation, abstraction) in Java by building a menu-driven student management system with duplicate ID validation and static data control.'
     },
     {
@@ -137,8 +137,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'ArrayList', 'Arrays', 'Data Structures'],
       image: '/images/Project04.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-04',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-04',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-04',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-04',
       detail: 'Implemented financial stock price analysis algorithms comparing fixed-size Java primitive arrays against dynamic ArrayLists, computing average price, max price, occurrence count, and cumulative totals.'
     },
     {
@@ -148,8 +148,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'OOP', 'Data Validation', 'Collections'],
       image: '/images/Project05.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-05',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-05',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-05',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-05',
       detail: 'Created a multi-entity Java university enrollment system allowing student course registration with strict capacity enforcement, grade assignments (0-100), static counter tracking, and GPA calculations.'
     },
     {
@@ -159,8 +159,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Interfaces', 'Polymorphism', 'OOP'],
       image: '/images/Project06.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-06',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-06',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-06',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-06',
       detail: 'Built a polymorphic Java vehicle rental engine leveraging interfaces and class inheritance to manage diverse vehicle types (cars, motorcycles, trucks) with custom attributes and inventory reporting.'
     },
     {
@@ -170,8 +170,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Java Swing', 'GUI', 'CRUD'],
       image: '/images/Project07.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-07',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-07',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-07',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-07',
       detail: 'Designed a tabbed Java Swing desktop application featuring full CRUD capabilities for student records, automated student ID generation, grade point average calculation (0.0-4.0), and dynamic table views.'
     },
     {
@@ -181,8 +181,8 @@ const DATA = {
       category: 'learning',
       tags: ['Python', 'Tkinter', 'GUI', 'CLI'],
       image: '/images/Project08.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-08',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-08',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-08',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-08',
       detail: 'Developed a dual-mode calculator in Python featuring both a CLI version and a sleek Tkinter dark-mode desktop GUI with division-by-zero protection and real-time expression evaluation.'
     },
     {
@@ -192,8 +192,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Java Swing', 'GUI', 'File I/O', 'Serialization'],
       image: '/images/Project09.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-09',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-09',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-09',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-09',
       detail: 'Created an advanced Java Swing library app with persistent object serialization, live text filtering by title/author, stock quantity control, timestamped transaction logs, and status bar feedback.'
     },
     {
@@ -203,8 +203,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Java Swing', 'Polymorphism', 'GUI'],
       image: '/images/Project10.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-10',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-10',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-10',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-10',
       detail: 'Constructed a graphical desktop interface for car rentals in Java Swing, utilizing polymorphic collection storage for cars, motorcycles, and trucks with custom form validation and instant refresh.'
     },
     {
@@ -214,8 +214,8 @@ const DATA = {
       category: 'learning',
       tags: ['Python', 'CustomTkinter', 'GUI', 'File I/O'],
       image: '/images/Project11.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-11',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-11',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-11',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-11',
       detail: 'Engineered a modern productivity desktop app in Python using CustomTkinter, featuring persistent text storage, theme toggles, status counters (total/completed/pending), and smooth scrolling lists.'
     },
     {
@@ -225,8 +225,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Stream API', 'Functional Programming', 'Lambdas'],
       image: '/images/Project12.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-12',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-12',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-12',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-12',
       detail: 'Deep dive into modern Java functional programming concepts: Stream API pipelines, collectors, method references, Optional safety, parallel stream performance benchmarks, and department analytics.'
     },
     {
@@ -236,8 +236,8 @@ const DATA = {
       category: 'learning',
       tags: ['Python', 'Tkinter', 'GUI', 'Game'],
       image: '/images/Project13.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-13',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-13',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-13',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-13',
       detail: 'Built an interactive Python Tkinter number guessing game with automatic range checking, adaptive hint system, attempt counting, keyboard shortcuts (Enter key), and winner modal dialogs.'
     },
     {
@@ -247,8 +247,8 @@ const DATA = {
       category: 'learning',
       tags: ['Python', 'CustomTkinter', 'Security', 'GUI'],
       image: '/images/Project14.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-14',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-14',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-14',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-14',
       detail: 'Built a security utility in Python using the `secrets` module for cryptographically strong random generation with length sliders (8-50), character set selection, and 1-click clipboard copying.'
     },
     {
@@ -258,8 +258,8 @@ const DATA = {
       category: 'learning',
       tags: ['Python', 'CustomTkinter', 'GUI', 'Game'],
       image: '/images/Project15.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-15',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-15',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-15',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-15',
       detail: 'Created a desktop arcade game in Python CustomTkinter with animated move buttons, AI move selection, color-coded victory banners, score state persistence, and OS-matched dark/light themes.'
     },
     {
@@ -269,8 +269,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Collections', 'HashMap', 'Text Processing'],
       image: '/images/Project16.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-16',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-16',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-16',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-16',
       detail: 'Developed a high-efficiency Java text processing tool analyzing character and word frequencies using HashMaps/HashSets, sentence stats, punctuation stripping, and top-frequency reporting.'
     },
     {
@@ -280,8 +280,8 @@ const DATA = {
       category: 'learning',
       tags: ['Python', 'CustomTkinter', 'API', 'GUI', 'JSON'],
       image: '/images/Project17.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-17',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-17',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-17',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-17',
       detail: 'Built a live desktop weather forecasting app in Python using Open-Meteo REST API, featuring geocoding city lookup, WMO weather code mapping to visual emojis, and CustomTkinter aesthetics.'
     },
     {
@@ -291,8 +291,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Java Swing', 'Generics', 'GUI', 'OOP'],
       image: '/images/Project18.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-18',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-18',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-18',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-18',
       detail: 'Created a generic Java Swing catalog desktop app demonstrating type-safe collection management (`Catalog<T>`), dynamic item type switching (Book, DVD, Magazine), search filtering, and CardLayout navigation.'
     },
     {
@@ -302,8 +302,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Multithreading', 'Synchronization', 'Concurrency'],
       image: '/images/Project19.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-19',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-19',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-19',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-19',
       detail: 'Engineered a concurrent Java bank simulation testing thread safety with synchronized deposit/withdraw routines, reentrant locking, race condition mitigation, and detailed transaction logs.'
     },
     {
@@ -313,8 +313,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Java Swing', 'GUI', 'OOP', 'E-Commerce'],
       image: '/images/Project20.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-20',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-20',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-20',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-20',
       detail: 'Designed a complete Java Swing desktop e-commerce app with dynamic product inventory, shopping cart management, automatic stock reduction on checkout, order status pipelines, and split-pane layout.'
     },
     {
@@ -324,8 +324,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Java Swing', 'Socket Programming', 'Multithreading', 'Networking'],
       image: '/images/Project21.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-21',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-21',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-21',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-21',
       detail: 'Built a real-time TCP socket chat server and Swing client in Java supporting multiple concurrent clients, multi-threaded client socket handlers, user join/leave alerts, and auto-scrolling chat logs.'
     },
     {
@@ -335,8 +335,8 @@ const DATA = {
       category: 'learning',
       tags: ['Java', 'Java Swing', 'API', 'Gson', 'MVC', 'GUI'],
       image: '/images/Project22.webp',
-      link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-22',
-      github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-22',
+      link: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-22',
+      github: 'https://github.com/shanaya-mahendran/My-Learning-Journal/tree/main/Day-22',
       detail: 'Created an MVC Java Swing weather forecasting app integrated with OpenWeatherMap API and Gson JSON parser, featuring 5-day weather predictions, search history, dynamic background colors, and unit toggles.'
     }
   ]

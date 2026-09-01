@@ -1,16 +1,16 @@
-# Deepthi Mahendran — Personal Web Portfolio
+# Shanaya Mahendran — Personal Web Portfolio
 
-> Deepthi Mahendran is a Full-Stack Developer, Tech Enthusiast, and Open-Source Contributor. She builds modern, high-performance web applications using Next.js, React, TypeScript, Python (FastAPI), Prisma ORM, Supabase, and PostgreSQL.
+> Shanaya Mahendran is a Full-Stack Developer, Tech Enthusiast, and Open-Source Contributor. She builds modern, high-performance web applications using Next.js, React, TypeScript, Python (FastAPI), Prisma ORM, Supabase, and PostgreSQL.
 
 ## Core Navigation & Links
-- Main Website: https://deepthi-paul.vercel.app/
-- About: https://deepthi-paul.vercel.app/about
-- Projects: https://deepthi-paul.vercel.app/projects
-- Skills & Tech Stack: https://deepthi-paul.vercel.app/skills
-- Academic Journey & Education: https://deepthi-paul.vercel.app/education
-- Contact: https://deepthi-paul.vercel.app/contact
-- GitHub Profile: https://github.com/deepthi-mahendran
-- Full Plain-Text Knowledge Dump: https://deepthi-paul.vercel.app/llms-full.txt
+- Main Website: https://shanaya-paul.vercel.app/
+- About: https://shanaya-paul.vercel.app/about
+- Projects: https://shanaya-paul.vercel.app/projects
+- Skills & Tech Stack: https://shanaya-paul.vercel.app/skills
+- Academic Journey & Education: https://shanaya-paul.vercel.app/education
+- Contact: https://shanaya-paul.vercel.app/contact
+- GitHub Profile: https://github.com/shanaya-mahendran
+- Full Plain-Text Knowledge Dump: https://shanaya-paul.vercel.app/llms-full.txt
 
 ## Key Information Overview
 - **Role**: Full-Stack Developer & Tech Enthusiast

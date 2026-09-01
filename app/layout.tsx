@@ -11,37 +11,37 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-body', weight: ['300
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', weight: ['400', '500'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://deepthi-paul.vercel.app'),
-  title: 'Deepthi Mahendran · Full-Stack Developer',
+  metadataBase: new URL('https://shanaya-paul.vercel.app'),
+  title: 'Shanaya Mahendran · Full-Stack Developer',
   icons: {
     icon: '/favicon.svg?v=3',
     apple: '/apple-icon.svg?v=3',
   },
-  description: 'Portfolio of Deepthi Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
-  keywords: ['Deepthi Mahendran', 'Full-Stack Developer', 'Frontend', 'Backend', 'Next.js', 'React', 'TypeScript', 'Portfolio'],
-  authors: [{ name: 'Deepthi Mahendran' }],
-  creator: 'Deepthi Mahendran',
+  description: 'Portfolio of Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
+  keywords: ['Shanaya Mahendran', 'Full-Stack Developer', 'Frontend', 'Backend', 'Next.js', 'React', 'TypeScript', 'Portfolio'],
+  authors: [{ name: 'Shanaya Mahendran' }],
+  creator: 'Shanaya Mahendran',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://deepthi-paul.vercel.app',
-    title: 'Deepthi Mahendran · Full-Stack Developer',
-    description: 'Portfolio of Deepthi Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
-    siteName: 'Deepthi Mahendran Portfolio',
+    url: 'https://shanaya-paul.vercel.app',
+    title: 'Shanaya Mahendran · Full-Stack Developer',
+    description: 'Portfolio of Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
+    siteName: 'Shanaya Mahendran Portfolio',
     images: [
       {
         url: '/og-image.jpg', // Assuming an og-image will be configured or placed in public eventually
         width: 1200,
         height: 630,
-        alt: 'Deepthi Mahendran Portfolio',
+        alt: 'Shanaya Mahendran Portfolio',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Deepthi Mahendran · Full-Stack Developer',
-    description: 'Portfolio of Deepthi Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
-    creator: '@deepthimahendran', // Update if user has a specific twitter handle
+    title: 'Shanaya Mahendran · Full-Stack Developer',
+    description: 'Portfolio of Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
+    creator: '@shanayamahendran', // Update if user has a specific twitter handle
     images: ['/og-image.jpg'],
   },
 }
@@ -49,13 +49,13 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Deepthi Mahendran',
-  url: 'https://deepthi-paul.vercel.app',
+  name: 'Shanaya Mahendran',
+  url: 'https://shanaya-paul.vercel.app',
   jobTitle: 'Full-Stack Developer',
   description: 'Full-Stack Developer & Tech Enthusiast building modern web applications using Next.js, React, TypeScript, Python, Prisma, and Supabase.',
   sameAs: [
-    'https://github.com/deepthi-mahendran',
-    'https://deepthi-paul.vercel.app'
+    'https://github.com/shanaya-mahendran',
+    'https://shanaya-paul.vercel.app'
   ],
   knowsAbout: [
     'Full-Stack Web Development',

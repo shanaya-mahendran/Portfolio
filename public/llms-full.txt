@@ -1,14 +1,14 @@
-# Deepthi Mahendran — Complete Personal Portfolio Knowledge Base
+# Shanaya Mahendran — Complete Personal Portfolio Knowledge Base
 
-This file provides the complete, unabridged plain-text knowledge base for Deepthi Mahendran's personal web portfolio (https://deepthi-paul.vercel.app/). It is designed for artificial intelligence models, search bots, and LLM agent crawlers.
+This file provides the complete, unabridged plain-text knowledge base for Shanaya Mahendran's personal web portfolio (https://shanaya-paul.vercel.app/). It is designed for artificial intelligence models, search bots, and LLM agent crawlers.
 
 ---
 
 ## 1. Biography & Summary
-- **Name**: Deepthi Mahendran
+- **Name**: Shanaya Mahendran
 - **Title**: Full-Stack Developer | Tech Enthusiast | Open Source Contributor | Changemaker
-- **Website**: https://deepthi-paul.vercel.app/
-- **GitHub**: https://github.com/deepthi-mahendran
+- **Website**: https://shanaya-paul.vercel.app/
+- **GitHub**: https://github.com/shanaya-mahendran
 - **Philosophy**: Building accessible, modern technology that serves people and creates real-world impact.
 
 ---
@@ -36,7 +36,7 @@ This file provides the complete, unabridged plain-text knowledge base for Deepth
 - **Status**: Under Progress / Active Development
 - **Category**: Full-Stack Web Application
 - **Tech Stack**: Next.js 14, TypeScript, Prisma ORM, Supabase PostgreSQL, Tailwind CSS, @react-pdf/renderer
-- **GitHub**: https://github.com/deepthi-mahendran/Smart-School
+- **GitHub**: https://github.com/shanaya-mahendran/Smart-School
 - **Description**: An enterprise-grade, multi-role School Management System featuring 4 dedicated portals (Admin, Teacher, Student, Parent).
 - **Key Features**:
   - Role-based cookie session security with bcryptjs.
@@ -53,14 +53,14 @@ This file provides the complete, unabridged plain-text knowledge base for Deepth
 - **Category**: Full-Stack Web Application
 - **Tech Stack**: FastAPI, PostgreSQL, JavaScript, Docker, Vite, Vitest, WebSockets, FAISS, Transformers
 - **Live Demo**: https://sara-001.vercel.app/
-- **GitHub**: https://github.com/deepthi-mahendran/Sara
+- **GitHub**: https://github.com/shanaya-mahendran/Sara
 - **Description**: Full-stack e-commerce platform featuring 32 real products, responsive 4-column grid, JWT authentication, AI visual similarity search (FAISS + Transformers), real-time shared cart via WebSockets, multi-step checkout, PWA support, and 117 test files (988 unit tests) with Vitest.
 
 ### CabXpert — Vehicle Reservation System
 - **Status**: Completed
 - **Category**: Full-Stack / Java Enterprise
 - **Tech Stack**: Java EE, Jersey (JAX-RS), MySQL, JDBC, Maven, Bootstrap
-- **GitHub**: https://github.com/Deepthi-Mahendran
+- **GitHub**: https://github.com/Shanaya-Mahendran
 - **Description**: Automated vehicle reservation system built for Mega City Cab using Java RESTful Web Services and Test-Driven Development (TDD). Manages driver and car scheduling, automated booking workflows, and billing management.
 
 ### Elegant Notes — PWA
@@ -68,22 +68,22 @@ This file provides the complete, unabridged plain-text knowledge base for Deepth
 - **Category**: Web Application / PWA
 - **Tech Stack**: React, TypeScript, Supabase, Tiptap Editor, Zustand
 - **Live Demo**: https://elegant-notes-demo.vercel.app/
-- **GitHub**: https://github.com/deepthi-mahendran/elegant-notes
+- **GitHub**: https://github.com/shanaya-mahendran/elegant-notes
 - **Description**: Offline-first note-taking Progressive Web App with Service Worker caching, Supabase real-time cloud synchronization, secure authentication, and a rich Tiptap editor with complex formatting.
 
 ### PTET Web (Social Summer of Code 2026)
 - **Status**: Completed / Open Source Contribution
 - **Category**: Open Source
 - **Tech Stack**: Node.js, Express, PostgreSQL, Sequelize
-- **GitHub PRs**: https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Adeepthi-mahendran
+- **GitHub PRs**: https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Ashanaya-mahendran
 - **Description**: Open-source contributor with 43+ merged pull requests. Built backend APIs (Daily Tip, Study Materials CRUD, Recommendations, Bookmark), implemented full-stack features, and improved dark/light theme accessibility.
 
 ### Personal Web Portfolio 🚀
 - **Status**: Completed
 - **Category**: Full-Stack Web Application
 - **Tech Stack**: Next.js App Router, React, TypeScript, Prisma, Framer Motion, Vanilla CSS
-- **Live Demo**: https://deepthi-paul.vercel.app/
-- **GitHub**: https://github.com/deepthi-mahendran/Portfolio
+- **Live Demo**: https://shanaya-paul.vercel.app/
+- **GitHub**: https://github.com/shanaya-mahendran/Portfolio
 - **Description**: Modern, high-performance personal portfolio featuring Framer Motion page transitions, an interactive HTML5 Canvas hero particle networking simulation, a glassmorphism dark/light theme engine, Prisma database schema integration, and 100 Lighthouse performance scores.
 
 ### My Educational Website
@@ -91,7 +91,7 @@ This file provides the complete, unabridged plain-text knowledge base for Deepth
 - **Category**: Web Application
 - **Tech Stack**: HTML5, CSS3, JavaScript, Responsive Design
 - **Live Demo**: https://my-web-project-iaii.vercel.app/
-- **GitHub**: https://github.com/deepthi-mahendran/my-web-project-iaii
+- **GitHub**: https://github.com/shanaya-mahendran/my-web-project-iaii
 - **Description**: Clean single-page static portfolio built with pure HTML, CSS, and JavaScript.
 
 ### SLIA Database Management
@@ -220,5 +220,5 @@ This file provides the complete, unabridged plain-text knowledge base for Deepth
 ---
 
 ## 6. Contact Information
-- **Website Contact Form**: https://deepthi-paul.vercel.app/contact
-- **GitHub**: https://github.com/deepthi-mahendran
+- **Website Contact Form**: https://shanaya-paul.vercel.app/contact
+- **GitHub**: https://github.com/shanaya-mahendran
