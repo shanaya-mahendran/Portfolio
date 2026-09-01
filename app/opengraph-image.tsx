@@ -47,7 +47,7 @@ export default function OpenGraphImage() {
               textShadow: '0 0 30px rgba(181, 136, 211, 0.8)',
             }}
           >
-            DM
+            SM
           </div>
         </div>
         <div
