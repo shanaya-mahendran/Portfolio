@@ -135,7 +135,7 @@ export default function AboutPage() {
                     textShadow: '0 12px 40px rgba(0,0,0,0.35)'
                   }}
                 >
-                  D
+                  S
                 </motion.span>
                 <motion.span
                   custom={1}
