@@ -28,21 +28,12 @@ export const metadata: Metadata = {
     title: 'Shanaya Mahendran · Full-Stack Developer',
     description: 'Portfolio of Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
     siteName: 'Shanaya Mahendran Portfolio',
-    images: [
-      {
-        url: '/opengraph-image',
-        width: 1200,
-        height: 630,
-        alt: 'Shanaya Mahendran Portfolio',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Shanaya Mahendran · Full-Stack Developer',
     description: 'Portfolio of Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
     creator: '@shanayamahendran',
-    images: ['/opengraph-image'],
   },
 }
 
