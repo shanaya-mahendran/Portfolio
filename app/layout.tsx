@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'Shanaya Mahendran Portfolio',
     images: [
       {
-        url: '/og-image.jpg', // Assuming an og-image will be configured or placed in public eventually
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'Shanaya Mahendran Portfolio',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Shanaya Mahendran · Full-Stack Developer',
     description: 'Portfolio of Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
-    creator: '@shanayamahendran', // Update if user has a specific twitter handle
-    images: ['/og-image.jpg'],
+    creator: '@shanayamahendran',
+    images: ['/opengraph-image'],
   },
 }
 
