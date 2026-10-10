@@ -21,7 +21,7 @@ export default function ContactPage() {
         // @ts-ignore
         if (typeof window !== 'undefined' && window.Calendly) {
           // @ts-ignore
-          window.Calendly.initPopupWidget({ url: 'https://calendly.com/pauldeepthi523' });
+          window.Calendly.initPopupWidget({ url: 'https://calendly.com/shanaya' });
         }
       }
     },
