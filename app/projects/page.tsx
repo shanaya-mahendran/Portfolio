@@ -32,6 +32,17 @@ const DATA = {
   ],
   projects: [
     {
+      id: 'smartpark',
+      title: 'SmartPark | IEEE CS Sri Lanka R10 Summer School 2026',
+      description: '3rd Place Winner — Trustworthy Smart Ecosystem Mini Ideathon. Predictive parking, fairness, and offline-first systems.',
+      category: 'fullstack',
+      tags: ['Smart Systems', 'IoT', 'Predictive Parking', 'IEEE CS R10', 'Offline-First'],
+      image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=600&h=400&fit=crop&auto=format',
+      link: '#',
+      github: '#',
+      detail: 'SmartPark is an intelligent parking platform developed during the IEEE Computer Society Region 10 Summer School 2026. Led team HungryBeast to 3rd place in the Trustworthy Smart Ecosystem Mini Ideathon. Architected with predictive parking algorithms, fairness-oriented spot allocation, and resilient offline-first systems.'
+    },
+    {
       id: 'cabXpert',
       title: 'CabXpert — Vehicle Reservation System',
       description: 'Online vehicle reservation system automating bookings, driver & car management, and billing.',
