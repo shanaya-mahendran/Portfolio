@@ -12,8 +12,11 @@ A modern, high-performance personal portfolio built with Next.js App Router, Rea
   - Interactive course tables with grade badges and expandable **"What I Gained"** knowledge panels for each course.
   - Single-accordion card expansion for clean timeline navigation.
 - **Programmes, Volunteering & Achievements**:
-  - **OMLAS Champion 2026** — One Million Leaders Asia (*In Progress*).
-  - **National Entrepreneurship Development Programme (NEPD Phase 3)** — National Innovation Agency / UoM / Union Bank (*Almost Completed*).
+  - **IEEE Computer Society R10 Summer School 2026** — Completed; Team Leader of HungryBeast, 3rd Place in Mini Ideathon with **SmartPark**.
+  - **OMLAS Champion 2026** — One Million Leaders Asia (*Almost Completed*).
+  - **National Entrepreneurship Development Programme (NEDP Phase 3)** — National Innovation Agency / UoM / Union Bank (*Completed, Jun–Oct 2026*).
+  - **1st International Sustainable Research Symposium 2026** — Volunteer (TRACE Expert City).
+  - **DevConnect Ambassador** — DevConnect (*Active*).
   - **IEEE Young Professionals Sri Lanka** — Y2NPro Social Media Coordinator.
   - **1st Alliance Cup Full Contact Karate 2025** — Gold Medalist (UWMAFS SL / UWMF Japan).
 - **Projects Showcase**:

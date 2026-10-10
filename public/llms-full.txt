@@ -6,9 +6,14 @@ This file provides the complete, unabridged plain-text knowledge base for Shanay
 
 ## 1. Biography & Summary
 - **Name**: Shanaya Mahendran
-- **Title**: Full-Stack Developer | Tech Enthusiast | Open Source Contributor | Changemaker
+- **Title**: Backend & Frontend Engineering Intern | Full-Stack Developer | Tech Enthusiast | Open Source Contributor | Changemaker
 - **Website**: https://shanaya-paul.vercel.app/
-- **GitHub**: https://github.com/shanaya-mahendran
+- **GitHub**: https://github.com/shanaya-mahendran/
+- **Current Roles & Experience**:
+  - **Backend Engineering Intern | DevConnect** (Oct 2026 – Present): Real-world production backend engineering covering API design, boundary validation, authentication/security, database integrity (relational schemas, indexing, atomic transactions), system reliability (caching, background workers), and DevOps/deployments.
+  - **Frontend Engineering Intern | DevConnect** (Oct 2026 – Present): Real-world production frontend engineering covering semantic HTML, advanced CSS, TypeScript at boundary, accessibility (WCAG), state management, React re-render optimization, and automated testing.
+  - **DevConnect Ambassador** (Oct 2026 – Present): Developer community advocacy, workshop collaboration, and student engagement.
+  - **Open Source Contributor**: Preparing for Winter of Social Codes; previously 43+ merged PRs in Social Summer of Code 2026 (PTET Web).
 - **Philosophy**: Building accessible, modern technology that serves people and creates real-world impact.
 
 ---
@@ -31,6 +36,13 @@ This file provides the complete, unabridged plain-text knowledge base for Shanay
 ---
 
 ## 3. Projects Catalog
+
+### SmartPark | IEEE CS Sri Lanka R10 Summer School 2026
+- **Status**: Completed / 3rd Place Mini Ideathon
+- **Role**: Team Leader, HungryBeast
+- **Category**: Smart Systems / IoT / Full-Stack
+- **Focus**: Predictive parking, fairness algorithms, and offline-first systems
+- **Description**: Intelligent parking system developed during the IEEE Computer Society Region 10 Summer School 2026 at University of Moratuwa. Led team HungryBeast to 3rd place in the Trustworthy Smart Ecosystem Mini Ideathon.
 
 ### Smart School Management System (SSMS)
 - **Status**: Under Progress / Active Development
@@ -191,26 +203,44 @@ This file provides the complete, unabridged plain-text knowledge base for Shanay
 
 ### IEEE Computer Society R10 Summer School 2026
 - **Period**: September 2026
-- **Status**: In Progress
+- **Status**: Completed
 - **Organization**: IEEE Computer Society Sri Lanka Chapter | University of Moratuwa, Sri Lanka
 - **Overview**: Four-day intensive summer school covering Trustworthy Smart Ecosystems, IoT, AI, Cybersecurity, Mini Ideathon, and team project development.
+- **Achievement & Role**: Team Leader of HungryBeast, securing 3rd place in the Trustworthy Smart Ecosystem Mini Ideathon with the SmartPark project (predictive parking, fairness, and offline-first systems).
 
 ### OMLAS Champion 2026
 - **Period**: August 2026 – Present
-- **Status**: In Progress
+- **Status**: Almost Completed
 - **Organization**: One Million Leaders Asia (OMLAS) | South & Southeast Asia
 - **Overview**: International leadership program focused on Personal Leadership, Sustainable Development, Social Innovation, Community Leadership, and Collaboration.
 
 ### National Entrepreneurship Development Programme (NEDP) – Phase 3
-- **Period**: June 2026 – Present
-- **Status**: Almost Completed
+- **Period**: June 2026 – October 2026
+- **Status**: Completed
 - **Organization**: National Innovation Agency (NIA) | University of Moratuwa | Union Bank of Colombo
 - **Overview**: Flagship national entrepreneurship programme providing training in business model development, market validation, financial planning, and venture pitching.
+
+### 1st International Sustainable Research Symposium 2026
+- **Period**: September 2026
+- **Role**: Volunteer
+- **Organization**: TRACE Expert City
+- **Overview**: Supported smooth event operations, schedule monitoring, and speaker/participant coordination at the 1st International Sustainable Research Symposium 2026.
+
+### DevConnect Ambassador
+- **Period**: October 2026 – Present
+- **Organization**: DevConnect
+- **Overview**: Representing DevConnect across university and developer networks, championing production software practices and community collaboration.
 
 ### Y2NPro Social Media Coordinator
 - **Period**: Feb 2026 – Present
 - **Organization**: Y2NPro Project | IEEE Young Professionals Sri Lanka
 - **Overview**: Managed social media presence across LinkedIn, Instagram, and Facebook for specialized tech learning initiatives.
+
+### 3rd Place – Trustworthy Smart Ecosystem Mini Ideathon (SmartPark)
+- **Date**: September 2026
+- **Organization**: IEEE Computer Society Sri Lanka Chapter | IEEE CS R10 Summer School 2026
+- **Role**: Team Leader, HungryBeast
+- **Overview**: 3rd place award for SmartPark, pitching predictive parking, fairness algorithms, and offline-first architectures.
 
 ### First Place (Gold Medal) – 1st Alliance Cup Full Contact Karate 2025
 - **Date**: November 2025

@@ -13,19 +13,32 @@
 - Full Plain-Text Knowledge Dump: https://shanaya-paul.vercel.app/llms-full.txt
 
 ## Key Information Overview
-- **Role**: Full-Stack Developer & Tech Enthusiast
+- **Role**: Backend & Frontend Engineering Intern | Full-Stack Developer | Tech Enthusiast
+- **Current Roles & Experience**:
+  - Backend Engineering Intern at DevConnect (Oct 2026 – Present)
+  - Frontend Engineering Intern at DevConnect (Oct 2026 – Present)
+  - DevConnect Ambassador (Oct 2026 – Present)
+  - Open Source Contributor: Preparing for Winter of Social Codes; previously 43+ merged PRs in Social Summer of Code 2026 (PTET Web)
 - **Education**: 
   - BSc in Information Technology at University of Moratuwa (GPA: 3.76)
   - BSc in Computer Science at University of the People (CGPA: 3.96)
 - **Primary Tech Stack**: Next.js, React, TypeScript, JavaScript, Python, FastAPI, Node.js, Express, Prisma ORM, Supabase, PostgreSQL, MySQL, SQLite, Docker, Tailwind CSS.
 - **Featured Projects**:
+  - SmartPark: 3rd Place winner at IEEE CS R10 Summer School 2026 Mini Ideathon (HungryBeast). Predictive parking, fairness, and offline-first systems.
   - Smart School Management System (SSMS): Enterprise-grade multi-role school management system (Admin, Teacher, Student, Parent) built with Next.js 14, Prisma, Supabase PostgreSQL, Tailwind CSS, and client-side PDF document generation.
   - Sara: Full-stack e-commerce platform built with FastAPI + PostgreSQL, Docker, FAISS vector search, WebSockets, and Vite frontend.
   - CabXpert: Vehicle reservation system using Java EE (Jersey JAX-RS), MySQL, JDBC, and Bootstrap.
   - Elegant Notes: Offline-first PWA with Supabase real-time sync and Tiptap rich editor.
   - PTET Web: Open-source contribution (43 merged PRs) building backend APIs and full-stack features.
 - **Programmes & Leadership**:
-  - IEEE Computer Society R10 Summer School 2026 (Participant, University of Moratuwa)
-  - OMLAS Champion 2026 (One Million Leaders Asia)
-  - National Entrepreneurship Development Programme (NEDP Phase 3)
-- **Achievements**: First Place Gold Medalist – 1st Alliance Cup Full Contact Karate 2025 (UWMF-Japan)
+  - IEEE Computer Society R10 Summer School 2026 (Completed, University of Moratuwa)
+  - OMLAS Champion 2026 (One Million Leaders Asia — Almost Completed)
+  - National Entrepreneurship Development Programme (NEDP Phase 3 — Completed, June–Oct 2026)
+- **Volunteering**:
+  - Volunteer — 1st International Sustainable Research Symposium 2026 (TRACE Expert City)
+  - DevConnect Ambassador (DevConnect)
+  - Social Media Coordinator — Y2NPro Project (IEEE Young Professionals Sri Lanka)
+- **Achievements & Awards**:
+  - 3rd Place — Trustworthy Smart Ecosystem Mini Ideathon (IEEE CS R10 Summer School 2026, Team Leader, HungryBeast)
+  - First Place Gold Medalist — 1st Alliance Cup Full Contact Karate 2025 (UWMF-Japan)
+
