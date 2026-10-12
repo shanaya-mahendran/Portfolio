@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     description: 'Portfolio of Shanaya Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
     creator: '@shanayamahendran',
   },
+  verification: {
+    google: 'bh0b7LJf1HFbXOQRCLeR-hQIQ7TPrgjng47ZeuUuNZE',
+  },
 }
 
 const jsonLd = {
