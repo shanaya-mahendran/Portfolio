@@ -525,51 +525,67 @@ export default function ImpactPage() {
                     </div>
 
                     {/* Linear Phase Tracker */}
-                    <div style={{ marginBottom: '22px' }}>
+                    <div className="maturity-tracker-box">
                       <div
                         style={{
                           display: 'flex',
+                          alignItems: 'center',
                           justifyContent: 'space-between',
-                          fontSize: '0.72rem',
+                          fontSize: '0.74rem',
                           fontFamily: 'var(--font-mono)',
-                          color: 'var(--text-muted)',
                           marginBottom: '8px'
                         }}
                       >
-                        <span>MATURITY TRACKER</span>
-                        <span style={{ color: '#34d399', fontWeight: 600 }}>
+                        <span style={{ color: 'var(--text-muted)', letterSpacing: '0.06em', fontWeight: 600 }}>
+                          MATURITY TRACKER
+                        </span>
+                        <span
+                          style={{
+                            color: '#34d399',
+                            fontWeight: 700,
+                            padding: '2px 8px',
+                            borderRadius: '12px',
+                            background: 'rgba(52, 211, 153, 0.1)',
+                            border: '1px solid rgba(52, 211, 153, 0.3)'
+                          }}
+                        >
                           STAGE {currentStepIndex + 1} OF 6
                         </span>
                       </div>
 
-                      <div className="lifecycle-tracker">
-                        <div className="lifecycle-track-bg" />
-                        <div
-                          className="lifecycle-track-fill"
-                          style={{
-                            width: `${Math.max(10, ((currentStepIndex + 0.5) / IMPACT_LIFECYCLE_STAGES.length) * 100)}%`
-                          }}
-                        />
-                        <div className="lifecycle-steps">
-                          {IMPACT_LIFECYCLE_STAGES.map((st, sIdx) => {
-                            const isPassed = sIdx < currentStepIndex
-                            const isCurrent = sIdx === currentStepIndex
-                            return (
-                              <div key={st} className="lifecycle-step" title={st}>
-                                <div
-                                  className={`step-circle ${
-                                    isCurrent ? 'active' : isPassed ? 'passed' : ''
-                                  }`}
-                                >
-                                  {isPassed ? '✓' : sIdx + 1}
-                                </div>
-                                <span className={`step-label ${isCurrent ? 'active' : ''}`}>
-                                  {st}
-                                </span>
-                              </div>
-                            )
-                          })}
-                        </div>
+                      {/* 6 Clean Segmented Pill Bars */}
+                      <div className="segmented-track">
+                        {IMPACT_LIFECYCLE_STAGES.map((st, sIdx) => {
+                          const isPassed = sIdx < currentStepIndex
+                          const isCurrent = sIdx === currentStepIndex
+                          return (
+                            <div
+                              key={st}
+                              title={`${sIdx + 1}. ${st}`}
+                              className={`segment-cell ${isCurrent ? 'active' : isPassed ? 'passed' : ''}`}
+                            />
+                          )
+                        })}
+                      </div>
+
+                      {/* Phase Status Sub-Row */}
+                      <div
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center',
+                          fontSize: '0.78rem'
+                        }}
+                      >
+                        <span style={{ color: 'var(--text-primary)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#34d399', display: 'inline-block' }} />
+                          Current: <span style={{ color: 'var(--accent)' }}>{init.phase}</span>
+                        </span>
+                        <span style={{ color: 'var(--text-muted)', fontSize: '0.72rem', fontFamily: 'var(--font-mono)' }}>
+                          {currentStepIndex + 1 < IMPACT_LIFECYCLE_STAGES.length
+                            ? `Next: ${IMPACT_LIFECYCLE_STAGES[currentStepIndex + 1]}`
+                            : 'Fully Matured'}
+                        </span>
                       </div>
                     </div>
 

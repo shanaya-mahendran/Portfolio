@@ -164,7 +164,7 @@ export default function ImpactInitiativeClient({ initiative }: Props) {
             </p>
           </div>
 
-          {/* Multi-Stage Lifecycle Bar */}
+          {/* Multi-Stage Lifecycle Stepper */}
           <div
             style={{
               padding: '24px',
@@ -178,46 +178,49 @@ export default function ImpactInitiativeClient({ initiative }: Props) {
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                fontSize: '0.78rem',
+                alignItems: 'center',
+                fontSize: '0.8rem',
                 fontFamily: 'var(--font-mono)',
                 color: 'var(--text-muted)',
-                marginBottom: '10px'
+                marginBottom: '16px'
               }}
             >
-              <span>LIFECYCLE MATURITY PROGRESSION</span>
-              <span style={{ color: '#34d399', fontWeight: 700 }}>
+              <span style={{ letterSpacing: '0.06em', fontWeight: 600 }}>LIFECYCLE MATURITY PROGRESSION</span>
+              <span
+                style={{
+                  color: '#34d399',
+                  fontWeight: 700,
+                  padding: '3px 10px',
+                  borderRadius: '12px',
+                  background: 'rgba(52, 211, 153, 0.1)',
+                  border: '1px solid rgba(52, 211, 153, 0.3)'
+                }}
+              >
                 PHASE {currentStepIndex + 1} OF 6: {initiative.phase.toUpperCase()}
               </span>
             </div>
 
-            <div className="lifecycle-tracker">
-              <div className="lifecycle-track-bg" />
-              <div
-                className="lifecycle-track-fill"
-                style={{
-                  width: `${Math.max(12, ((currentStepIndex + 0.5) / IMPACT_LIFECYCLE_STAGES.length) * 100)}%`
-                }}
-              />
-              <div className="lifecycle-steps">
-                {IMPACT_LIFECYCLE_STAGES.map((st, sIdx) => {
-                  const isPassed = sIdx < currentStepIndex
-                  const isCurrent = sIdx === currentStepIndex
-                  return (
-                    <div key={st} className="lifecycle-step" title={st}>
-                      <div
-                        className={`step-circle ${
-                          isCurrent ? 'active' : isPassed ? 'passed' : ''
-                        }`}
-                      >
-                        {isPassed ? '✓' : sIdx + 1}
-                      </div>
-                      <span className={`step-label ${isCurrent ? 'active' : ''}`} style={{ fontSize: '0.72rem' }}>
-                        {st}
-                      </span>
+            <div className="stepper-pipeline">
+              {IMPACT_LIFECYCLE_STAGES.map((st, sIdx) => {
+                const isPassed = sIdx < currentStepIndex
+                const isCurrent = sIdx === currentStepIndex
+                return (
+                  <div
+                    key={st}
+                    className={`stepper-node ${isCurrent ? 'active' : isPassed ? 'passed' : ''}`}
+                  >
+                    <div className="stepper-num">
+                      {isPassed ? '✓' : sIdx + 1}
                     </div>
-                  )
-                })}
-              </div>
+                    <div className="stepper-text">
+                      {st}
+                    </div>
+                    <div className="stepper-status">
+                      {isPassed ? 'Completed' : isCurrent ? 'Active Phase' : `Stage ${sIdx + 1}`}
+                    </div>
+                  </div>
+                )
+              })}
             </div>
           </div>
 
