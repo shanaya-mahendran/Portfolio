@@ -38,8 +38,12 @@ import {
 
 export default function ImpactPage() {
   const [selectedPhase, setSelectedPhase] = useState<string>('ALL')
+  const [selectedTrack, setSelectedTrack] = useState<'ALL' | 'SWOC' | 'REGIONAL'>('ALL')
   const [expandedTimeline, setExpandedTimeline] = useState<Record<string, boolean>>({
-    'community-smart-waste-network': true,
+    'skilltree': true,
+    'impactconnect': false,
+    'devbridge': false,
+    'community-smart-waste-network': false,
     'public-service-reporting-dashboard': false,
     'digital-marketplace-informal-workers': false,
     'offline-first-digital-literacy-hub': false
@@ -51,9 +55,18 @@ export default function ImpactPage() {
 
   // Filtered initiatives
   const filteredInitiatives = useMemo(() => {
-    if (selectedPhase === 'ALL') return IMPACT_INITIATIVES
-    return IMPACT_INITIATIVES.filter(init => init.phase === selectedPhase)
-  }, [selectedPhase])
+    return IMPACT_INITIATIVES.filter(init => {
+      const matchTrack =
+        selectedTrack === 'ALL'
+          ? true
+          : selectedTrack === 'SWOC'
+          ? !!init.isSWoC
+          : !init.isSWoC
+      const matchPhase =
+        selectedPhase === 'ALL' ? true : init.phase === selectedPhase
+      return matchTrack && matchPhase
+    })
+  }, [selectedTrack, selectedPhase])
 
   // Aggregate stats
   const totalInitiatives = IMPACT_INITIATIVES.length
@@ -63,6 +76,8 @@ export default function ImpactPage() {
     0
   )
   const allUniqueSdgs = Array.from(new Set(IMPACT_INITIATIVES.flatMap(i => i.sdgs)))
+  const swocCount = IMPACT_INITIATIVES.filter(i => i.isSWoC).length
+  const regionalCount = IMPACT_INITIATIVES.filter(i => !i.isSWoC).length
 
   // Helper for pillar icons
   const getPillarIcon = (iconName: string) => {
@@ -298,9 +313,28 @@ export default function ImpactPage() {
                 {IMPACT_INITIATIVES.map(init => (
                   <tr key={init.slug} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                     <td style={{ padding: '14px', fontWeight: 600, color: 'var(--text-primary)' }}>
-                      <Link href={`/impact/${init.slug}`} style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>
-                        {init.title}
-                      </Link>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                        <Link href={`/impact/${init.slug}`} style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>
+                          {init.title}
+                        </Link>
+                        {init.isSWoC && (
+                          <span
+                            style={{
+                              fontSize: '0.68rem',
+                              fontFamily: 'var(--font-mono)',
+                              padding: '2px 8px',
+                              borderRadius: '12px',
+                              background: 'rgba(16, 185, 129, 0.15)',
+                              border: '1px solid rgba(52, 211, 153, 0.4)',
+                              color: '#34d399',
+                              fontWeight: 700,
+                              whiteSpace: 'nowrap'
+                            }}
+                          >
+                            SWoC S7
+                          </span>
+                        )}
+                      </div>
                     </td>
                     <td style={{ padding: '14px' }}>
                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
@@ -356,6 +390,36 @@ export default function ImpactPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          {/* ── PROGRAM TRACK & CATEGORY FILTER ── */}
+          <div style={{ marginBottom: '20px' }}>
+            <div style={{ fontSize: '0.8rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '10px' }}>
+              PROGRAM TRACK & INITIATIVE CATEGORY:
+            </div>
+            <div className="impact-tab-bar">
+              <button
+                onClick={() => setSelectedTrack('ALL')}
+                className={`tab-btn ${selectedTrack === 'ALL' ? 'active' : ''}`}
+              >
+                All Initiatives ({IMPACT_INITIATIVES.length})
+              </button>
+              <button
+                onClick={() => setSelectedTrack('SWOC')}
+                className={`tab-btn ${selectedTrack === 'SWOC' ? 'active' : ''}`}
+                style={{
+                  border: selectedTrack === 'SWOC' ? '1px solid #10b981' : undefined
+                }}
+              >
+                <span style={{ color: '#34d399', fontWeight: 700 }}>★ SWoC Season 7 Flagships ({swocCount})</span>
+              </button>
+              <button
+                onClick={() => setSelectedTrack('REGIONAL')}
+                className={`tab-btn ${selectedTrack === 'REGIONAL' ? 'active' : ''}`}
+              >
+                Regional DPI Concepts ({regionalCount})
+              </button>
+            </div>
           </div>
 
           {/* ── LIFECYCLE PHASE FILTERS ── */}
@@ -428,24 +492,52 @@ export default function ImpactPage() {
                       }}
                     />
 
-                    {/* Phase Badge */}
+                    {/* Phase & SWoC Badges */}
                     <div
                       style={{
                         position: 'absolute',
                         top: '14px',
                         left: '14px',
-                        padding: '4px 12px',
-                        borderRadius: '20px',
-                        background: 'rgba(14, 7, 19, 0.85)',
-                        backdropFilter: 'blur(8px)',
-                        border: '1px solid rgba(52, 211, 153, 0.4)',
-                        color: '#34d399',
-                        fontSize: '0.75rem',
-                        fontWeight: 700,
-                        fontFamily: 'var(--font-mono)'
+                        display: 'flex',
+                        gap: '8px',
+                        alignItems: 'center',
+                        flexWrap: 'wrap'
                       }}
                     >
-                      ● {init.phase}
+                      {init.isSWoC && (
+                        <div
+                          style={{
+                            padding: '4px 10px',
+                            borderRadius: '20px',
+                            background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                            color: '#ffffff',
+                            fontSize: '0.72rem',
+                            fontWeight: 800,
+                            fontFamily: 'var(--font-mono)',
+                            boxShadow: '0 4px 12px rgba(16, 185, 129, 0.4)',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px'
+                          }}
+                        >
+                          ★ SWOC S7 PROPOSAL
+                        </div>
+                      )}
+                      <div
+                        style={{
+                          padding: '4px 10px',
+                          borderRadius: '20px',
+                          background: 'rgba(14, 7, 19, 0.85)',
+                          backdropFilter: 'blur(8px)',
+                          border: '1px solid rgba(52, 211, 153, 0.4)',
+                          color: '#34d399',
+                          fontSize: '0.72rem',
+                          fontWeight: 700,
+                          fontFamily: 'var(--font-mono)'
+                        }}
+                      >
+                        ● {init.phase}
+                      </div>
                     </div>
 
                     {/* SDG Pills in Banner */}

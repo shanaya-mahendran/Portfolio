@@ -9,7 +9,10 @@ interface PageProps {
 
 const ALIAS_MAP: Record<string, string> = {
   'smart-waste-routing': 'community-smart-waste-network',
-  'micro-skills-marketplace': 'digital-marketplace-informal-workers'
+  'micro-skills-marketplace': 'digital-marketplace-informal-workers',
+  'skill-tree': 'skilltree',
+  'impact-connect': 'impactconnect',
+  'dev-bridge': 'devbridge'
 }
 
 export async function generateStaticParams() {
@@ -30,8 +33,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
 
+  const pageTitle = initiative.isSWoC
+    ? `${initiative.title} | SWoC S7 Proposal · Shanaya Mahendran`
+    : `${initiative.title} | Building Sri Lanka's Digital Future`
+
   return {
-    title: `${initiative.title} | Building Sri Lanka's Digital Future`,
+    title: pageTitle,
     description: initiative.primaryObjective,
     openGraph: {
       title: `${initiative.title} — Impact & SDGs Roadmap`,
@@ -48,7 +55,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${initiative.title} | Building Sri Lanka's Digital Future`,
+      title: pageTitle,
       description: initiative.primaryObjective
     }
   }

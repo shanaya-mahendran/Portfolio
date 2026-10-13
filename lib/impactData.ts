@@ -9,6 +9,13 @@ export interface SDGInfo {
 }
 
 export const SDG_METADATA: Record<number, SDGInfo> = {
+  2: {
+    number: 2,
+    title: 'Zero Hunger',
+    color: '#DDA63A',
+    icon: 'Apple',
+    tagline: 'End hunger, achieve food security, improved nutrition, and promote sustainable community food redistribution'
+  },
   4: {
     number: 4,
     title: 'Quality Education',
@@ -106,6 +113,11 @@ export interface ImpactInitiative {
   sdgs: number[]
   icon: string
   image: string
+  isSWoC?: boolean
+  programBadge?: string
+  license?: string
+  repoUrl?: string
+  role?: string
   externalResources: {
     label: string
     url: string
@@ -188,37 +200,461 @@ export const MISSION_PILLARS: MissionPillar[] = [
   },
   {
     id: 'ecological',
-    title: 'Ecological Resilience & Smart Systems',
-    subtitle: 'SDG 11 · SDG 12 · SDG 13',
+    title: 'Ecological Resilience & Food Stewardship',
+    subtitle: 'SDG 2 · SDG 11 · SDG 12 · SDG 13',
     icon: 'Sprout',
-    sdgs: [11, 12, 13],
-    overview: 'Deploying edge telemetry, circular economy workflows, and IoT monitoring to protect Sri Lanka’s vulnerable biodiversity, urban environments, and resource stewardship.',
+    sdgs: [2, 11, 12, 13],
+    overview: 'Deploying edge telemetry, circular economy workflows, and surplus food redistribution logistics to protect vulnerable urban environments, curb hunger, and eliminate resource waste.',
     focusAreas: [
+      'Real-time surplus food redistribution matching donors with vetted community kitchens',
       'Decentralized municipal waste and recyclables routing systems',
       'Micro-climate flood and disaster warning networks for transport corridors',
-      'Resource stewardship dashboards tracking community recycling yields',
-      'Low-power sensor telemetry resilient against severe weather disruptions'
+      'Resource stewardship dashboards tracking community recycling and meal redistribution yields'
     ],
-    quote: '"Island nations bear the brunt of climate volatility. Our digital architectures must serve as early warning shields and resource optimizers."'
+    quote: '"True sustainability connects resource stewardship with human dignity—eliminating food waste and environmental degradation in one shared loop."'
   },
   {
     id: 'economy',
-    title: 'Digital Economy & Youth Empowerment',
-    subtitle: 'SDG 8 · SDG 17',
+    title: 'Digital Economy & Open-Source Empowerment',
+    subtitle: 'SDG 4 · SDG 8 · SDG 9 · SDG 17',
     icon: 'TrendingUp',
-    sdgs: [8, 17],
-    overview: 'Cultivating grassroots developer skills, open-source innovation, and decentralized economic opportunities to power Sri Lanka’s emerging knowledge economy.',
+    sdgs: [4, 8, 9, 17],
+    overview: 'Cultivating grassroots developer skills, open-source innovation, and country-aware opportunity pathways (SWoC Season 7) to power the emerging knowledge economy.',
     focusAreas: [
-      'Disintermediating informal gig economy workers from exploitative fee brokers',
-      'Open-source mentorship and civic hackathon leadership for undergraduates',
-      'Equitable skills accreditation accessible beyond elite metropolitan institutions',
-      'Building global open-source partnerships that bridge local engineers with international initiatives'
+      'Visual, gamified skill trees (SkillTree) bridging self-taught developers into open-source contributors',
+      'Country-aware verified opportunity feeds (DevBridge) democratizing hackathons and jobs for underrepresented regions',
+      'Unified changemaker networking (ImpactConnect) pairing skilled youth with NGO initiatives',
+      'Open-source mentorship and civic hackathon leadership with clean contributor difficulty ladders'
     ],
-    quote: '"Sri Lanka’s most resilient natural resource is the intellect and determination of its youth. We engineer platforms that transform potential into economic sovereignty."'
+    quote: '"The most resilient resource in the Global South is the intellect and determination of its youth. We engineer open-source platforms that transform raw potential into global opportunity."'
   }
 ]
 
 export const IMPACT_INITIATIVES: ImpactInitiative[] = [
+  {
+    slug: 'skilltree',
+    title: 'SkillTree — Gamified Community Learning-Path Builder',
+    tagline: 'Visual skill-tree editor where anyone can design, fork, and earn XP as they climb interactive roadmaps.',
+    primaryObjective: 'Transform static learning roadmaps into living, interactive, forkable skill trees with measurable progress tracking, gamified XP curves, and infinite open-source contributor surface area.',
+    targetDemographic: 'Self-taught developers, bootcamp grads, open-source mentors, and developer educators.',
+    provinces: ['Open-Source Ecosystem', 'All 9 Provinces (Sri Lanka)', 'Global Developer Community'],
+    phase: 'Planned',
+    phaseIndex: 1,
+    sdgs: [4, 8, 9, 17],
+    icon: 'GraduationCap',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000&auto=format&fit=crop&q=80',
+    isSWoC: true,
+    programBadge: 'SWoC Season 7 Proposal',
+    license: 'MIT',
+    repoUrl: 'https://github.com/shanaya-mahendran/skilltree',
+    role: 'Project Admin / Maintainer',
+    externalResources: [
+      { label: 'SWoC S7 Project Proposal', url: 'https://github.com/shanaya-mahendran/skilltree', type: 'brief' },
+      { label: 'Proposed GitHub Repository', url: 'https://github.com/shanaya-mahendran/skilltree', type: 'github' },
+      { label: '30-Issue Contributor Taxonomy', url: '#', type: 'brief' }
+    ],
+    problem: {
+      overview: 'Every developer has used a roadmap—a static image, Notion doc, or roadmap.sh page. None of them are interactive, forkable, or measurable. Learners get lost with no notion of prerequisites, mentors repeat guidance constantly, and progress is invisible with no gamified feedback loop to drive retention.',
+      rootCauses: [
+        'Roadmaps are static PNGs or articles that cannot track completed skills or dynamically reveal what to learn next',
+        'Roadmaps lack personalization: a junior and senior receive the exact same DSA guide with zero branch pruning',
+        'Roadmaps are not forkable: learners who disagree with 20% of a guide cannot remix or build upon the other 80%',
+        'Zero gamification: absent XP, streaks, or badges, learners lack the micro-feedback needed to sustain long-term self-study',
+        'Community knowledge is fragmented across personal blogs and Twitter threads instead of an auditable open-source graph'
+      ],
+      sriLankaContext: 'In Sri Lanka and emerging tech hubs across the Global South, thousands of self-taught developers and undergraduates navigate ambiguous curricula without senior mentorship. Static roadmaps fail to bridge the practical skills required by international remote teams, leaving aspiring contributors overwhelmed without structured, bite-sized progression.',
+      impactMetrics: [
+        { stat: '42 / 73', label: 'SWoC S7 Projects Using React (Dominant Stack Fit)' },
+        { stat: '30 Issues', label: 'Curated Difficulty Ladder at Launch (15 Good First Issues)' },
+        { stat: '3–4 Trees', label: 'Curated Launch Paths (Frontend, DSA, AI/ML, DevOps)' },
+        { stat: '0 / 73', label: 'Other SWoC S7 Projects with Canvas/Graph Interaction' }
+      ]
+    },
+    targetCommunity: {
+      personas: [
+        {
+          role: 'Self-Taught Developers & Students',
+          description: 'Learners seeking a structured path from fundamentals to job readiness without getting stuck in tutorial hell.',
+          painPoints: ['Not knowing prerequisites for advanced topics', 'Feeling overwhelmed by 40 conflicting guides', 'Zero feedback or milestone celebrations']
+        },
+        {
+          role: 'Open-Source Mentors & Educators',
+          description: 'Maintainers and senior developers who guide juniors through open-source tech stacks.',
+          painPoints: ['Rewriting the same learning guidance for every mentee', 'No way to measure reach or learner completion rates', 'Inability to fork existing roadmaps cleanly']
+        },
+        {
+          role: 'SWoC S7 Open-Source Contributors',
+          description: 'Frontend, full-stack, AI, and docs contributors seeking accessible, rewarding issues with clear PR acceptance criteria.',
+          painPoints: ['Complex monolithic codebases with high setup friction', 'Lack of visual payoff for junior contributions']
+        }
+      ],
+      accessibilityFocus: 'Keyboard navigation for canvas nodes, high-contrast dark/light mode palettes, responsive node inspection drawer, and screen-reader accessible graph tree fallback.'
+    },
+    proposedSolution: {
+      summary: 'SkillTree turns roadmaps into living skill trees: authors design trees on an infinite drag-and-drop canvas (React Flow), learners clone trees and mark nodes complete to earn XP and level up, and the community upvotes, forks, and remixes paths like open-source code.',
+      operationalModel: 'Admin-maintained core platform for SWoC S7 with an open MIT license. Contributors tackle 30 pre-scoped issues across Good-First-Issue, Medium, and Advanced tiers. Seed paths (Frontend, DSA, AI/ML, DevOps) guarantee immediate utility upon kickoff.',
+      citizenWorkflow: [
+        '1. Learner browses path library filtered by domain, tags, and community upvotes',
+        '2. Learner clones or forks a roadmap to their personal profile dashboard',
+        '3. Interactive canvas visualizes prerequisite branches with unlockable node states',
+        '4. Learner completes node milestones, earning verifiable XP, leveling up, and unlocking skill badges'
+      ],
+      keyInnovations: [
+        'Duolingo Progression × Miro Canvas × GitHub Fork Model: Interactive visual node editing via React Flow',
+        'Clean Difficulty Ladder: 15 good-first-issues (zero backend dependency), 10 medium enhancements, 5 advanced graph/AI challenges',
+        'Instant Contributor Visual Payoff: Canvas nodes and edges are immediately demoable in PR screenshots and GIFs'
+      ]
+    },
+    architecture: {
+      summary: 'Built on React 18, Vite, TypeScript, and Tailwind CSS on the client; React Flow (@xyflow/react) for infinite canvas rendering; Zustand and TanStack Query for state; Node.js 20, Express, MongoDB, and Mongoose on the server; and Zod for unified contract validation.',
+      stack: ['React 18', 'TypeScript', 'React Flow (@xyflow/react)', 'Tailwind CSS', 'Zustand', 'TanStack Query', 'Node.js 20', 'Express', 'MongoDB / Mongoose', 'Zod', 'Vitest', 'Docker Compose'],
+      offlineFirstStrategy: 'Tree states and user progress persist in browser IndexedDB/LocalStorage for offline browsing and offline node completions, syncing via optimistic mutations when online.',
+      bandwidthOptimization: 'Canvas nodes render with virtualized windowing; SVG edge rendering utilizes hardware-accelerated transforms; initial JavaScript bundle compressed under 140KB via Vite split chunks.',
+      trilingualSupport: 'Extensible i18n dictionary system enabling multilingual node titles and curriculum guides in Sinhala, Tamil, and English.',
+      dataPrivacy: 'Stateless JWT authentication with bcrypt password hashing; public learner profiles display opt-in badges and XP without exposing personal contact info.'
+    },
+    milestones: [
+      {
+        id: 'st-0',
+        title: 'Pre-Season: Monorepo Scaffold & 30-Issue Backlog',
+        description: 'Scaffold client + server monorepo, write docs/API.md, Docker Compose for Mongo, seed 4 sample paths, and publish 30 issues.',
+        targetQuarter: 'Pre-Kickoff',
+        isCompleted: true,
+        deliverable: 'Scaffolded monorepo, CI pipeline, and 30 documented GitHub issues'
+      },
+      {
+        id: 'st-1',
+        title: 'Week 1: Foundations & Read-Only Canvas',
+        description: 'End-to-end JWT auth, Path CRUD API, and public read-only path viewer powered by React Flow.',
+        targetQuarter: 'Week 1',
+        isCompleted: false,
+        deliverable: 'Working path viewer and public browsing library'
+      },
+      {
+        id: 'st-2',
+        title: 'Week 2: The Visual Editor & XP Progress',
+        description: 'Interactive path editor with drag/connect nodes, position PATCH API, node completion engine, and user profile XP progression.',
+        targetQuarter: 'Week 2',
+        isCompleted: false,
+        deliverable: 'Drag-and-drop tree editor and gamified XP curve'
+      },
+      {
+        id: 'st-3',
+        title: 'Week 3: Community Layer & Forking',
+        description: 'Optimistic voting system, path forking with provenance tracking, domain filters, full-text search, and badge awards.',
+        targetQuarter: 'Week 3',
+        isCompleted: false,
+        deliverable: 'Forking engine, community search, and badge achievements'
+      },
+      {
+        id: 'st-4',
+        title: 'Week 4: Polish, Production Deploy & AI Stretch',
+        description: 'Dark mode, loading skeletons, OG preview card generation, stretch AI path generation, and deployment on Vercel + Render free tier.',
+        targetQuarter: 'Week 4',
+        isCompleted: false,
+        deliverable: 'Production v1.0 release and demo video'
+      }
+    ],
+    successCriteria: [
+      { metric: 'Active Contributors (≥1 Merged PR)', target: '≥ 20 Contributors', verificationMethod: 'GitHub PR merge audit' },
+      { metric: 'Repeat Contributor Retention (≥3 PRs)', target: '≥ 8 Contributors', verificationMethod: 'Contributor commit cadence logs' },
+      { metric: 'Good First Issues Closed', target: '≥ 12 of 15 Issues', verificationMethod: 'GitHub milestone issue tracker' },
+      { metric: 'Median PR Response SLA', target: '< 48 Hours', verificationMethod: 'Maintainer PR review timestamps' }
+    ],
+    operationalDisclaimer: {
+      assumptions: [
+        'Contributors are familiar with modern React and JavaScript fundamentals common in SWoC',
+        'Docker Compose eliminates local MongoDB installation drop-off for beginner developers'
+      ],
+      externalDependencies: [
+        'React Flow (@xyflow/react) library stability and canvas performance',
+        'Vercel and Render free tiers for hosting preview and production builds'
+      ],
+      governanceEthics: 'SkillTree is licensed under MIT and adheres to open-source governance. The project strictly prohibits paywalled learning roadmaps or vendor lock-in. Anti-metric vigilance is enforced: 25 meaningful PRs are prioritized over 60 trivial cosmetic PRs.'
+    }
+  },
+  {
+    slug: 'impactconnect',
+    title: 'ImpactConnect — Civic Networking, Volunteering & Food Redistribution',
+    tagline: 'Open-source digital platform unifying professional networking, community collaboration, and measurable social impact with surplus food redistribution.',
+    primaryObjective: 'Connect young professionals and students with vetted NGO needs, volunteer projects, and surplus food redistribution—tracking verifiable impact metrics including volunteer hours, meals saved, and lives touched.',
+    targetDemographic: 'Young professionals, changemakers, NGOs, mentors, restaurants, and food redistribution volunteers.',
+    provinces: ['Community Networks', 'All 9 Provinces (Sri Lanka)', 'Youth Changemaker Ecosystems'],
+    phase: 'Planned',
+    phaseIndex: 1,
+    sdgs: [2, 10, 11, 12, 17],
+    icon: 'HeartHandshake',
+    image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1000&auto=format&fit=crop&q=80',
+    isSWoC: true,
+    programBadge: 'SWoC Season 7 Proposal',
+    license: 'MIT',
+    repoUrl: 'https://github.com/shanaya-mahendran/impactconnect',
+    role: 'Project Admin / Maintainer',
+    externalResources: [
+      { label: 'SWoC Complete Proposal', url: 'https://github.com/shanaya-mahendran/impactconnect', type: 'brief' },
+      { label: 'Proposed GitHub Repository', url: 'https://github.com/shanaya-mahendran/impactconnect', type: 'github' },
+      { label: 'Database Schema & RLS Spec', url: '#', type: 'paper' }
+    ],
+    problem: {
+      overview: 'Young changemakers face fragmented networking on LinkedIn and Discord, lack structured channels to match their digital skills with vetted NGO needs, and see no unified ledger to track volunteer impact. Simultaneously, acute food waste and hunger coexist: restaurants discard surplus meals while local welfare groups struggle to source nutrition in real time.',
+      rootCauses: [
+        'Fragmented professional networks: commercial platforms are noisy and lack purposeful civic or non-profit alignment',
+        'No bridge between tech skills and social impact: developers and designers want to volunteer but cannot find vetted NGO tasks',
+        'Invisible social impact: volunteer hours, meals saved, and lives touched are never transparently accredited or tracked',
+        'Acute food waste vs hunger gap: restaurants and households lack an on-demand logistics bridge to coordinate real-time surplus food claims with grassroots NGOs'
+      ],
+      sriLankaContext: 'In Sri Lanka, persistent economic vulnerability has increased urban nutrition insecurity while community kitchens struggle for dependable ingredients. Civic networks like Generation ALPHA and OMLAS have shown the immense potential of youth solidarity, yet lack a unified open-source technological hub to coordinate volunteers, resources, and surplus food.',
+      impactMetrics: [
+        { stat: '100+ Meals', label: 'Target Meals Saved Tracked in Season MVP' },
+        { stat: '50+ Connections', label: 'Purposeful Mentorship & Professional Links' },
+        { stat: '5+ NGOs', label: 'Vetted Non-Profit Organizations Onboarded' },
+        { stat: '10+ Projects', label: 'Civic & Volunteer Projects Successfully Delivered' }
+      ]
+    },
+    targetCommunity: {
+      personas: [
+        {
+          role: 'Young Professionals & Changemakers',
+          description: 'Tech workers, designers, and students seeking to apply their professional skills to high-impact non-profit initiatives.',
+          painPoints: ['Cannot find verified volunteer opportunities fitting their schedules', 'No recognition or portfolio proof of volunteer impact']
+        },
+        {
+          role: 'Grassroots NGOs & Community Leaders',
+          description: 'Non-profit coordinators needing technical, administrative, and volunteer support without enterprise software costs.',
+          painPoints: ['Overwhelmed by ad-hoc volunteer messages', 'Inability to publicize urgent project and material needs']
+        },
+        {
+          role: 'Food Donors & Redistribution Volunteers',
+          description: 'Restaurants, caterers, and volunteer couriers coordinating surplus food pickups to prevent food waste.',
+          painPoints: ['No real-time inventory channel before food spoils', 'Logistical uncertainty on pickup timing and safe handover']
+        }
+      ],
+      accessibilityFocus: 'Mobile-first PWA design, low-contrast dark mode support, trilingual form captions, and streamlined three-step surplus food donation reporting.'
+    },
+    proposedSolution: {
+      summary: 'An open-source ecosystem organized into six integrated modules: Professional Networking, Community Feed & Groups, Project & Collaboration Hub (NGO needs board), Events & Mentorship, Impact Modules (Food Redistribution & Verified Dashboard), and Gamified Impact Badges.',
+      operationalModel: 'Open-source platform backed by Supabase with Row Level Security (RLS). NGOs post verified needs; donors post surplus food with geolocation; changemakers apply for skill-matched projects and log verified impact hours.',
+      citizenWorkflow: [
+        '1. Changemaker creates verified profile detailing skills, cause interests, and location',
+        '2. NGOs publish project needs; automated TF-IDF skill matching pairs suitable volunteers',
+        '3. Food donors log surplus listings; nearby verified NGOs claim items for scheduled pickup',
+        '4. Real-time Impact Dashboard aggregates volunteer hours, meals saved, and people helped into an auditable public ledger'
+      ],
+      keyInnovations: [
+        'Real-Time Surplus Food Redistribution: Geolocation-aware inventory logging matching food surplus with vetted distribution centers',
+        'Skill-Matching Engine: TF-IDF vector similarity and embedding queries matching volunteers to NGO tasks',
+        'Verifiable Impact Ledger: Transparent tracking of hours, meals diverted, and community badges with zero platform fees'
+      ]
+    },
+    architecture: {
+      summary: 'Built on React, Vite, Tailwind CSS, shadcn/ui, and Framer Motion on the frontend; Supabase (PostgreSQL, Auth, Realtime, Storage, Edge Functions) with strict Row Level Security (RLS) on the backend; and an extensible Python + FastAPI ML microservice for TF-IDF skill matching and time-series demand forecasting.',
+      stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Framer Motion', 'Supabase (PostgreSQL, Auth, Realtime)', 'Python', 'FastAPI', 'scikit-learn', 'Docker'],
+      offlineFirstStrategy: 'Supabase client caches user profiles, offline project applications, and cached food listings in IndexedDB for resilient offline viewing on unstable mobile connections.',
+      bandwidthOptimization: 'Image optimization via Supabase Storage transforms; payload size under 85KB gzip; lazy loading for community feed posts and media.',
+      trilingualSupport: 'Trilingual UI localization strings across Sinhala, Tamil, and English with fallback dictionary resolution.',
+      dataPrivacy: 'Granular Supabase Row Level Security (RLS) policies: users edit only their own profiles; messages restricted to participants; donor addresses fuzzed to neighborhood radius.'
+    },
+    milestones: [
+      {
+        id: 'ic-1',
+        title: 'Phase 1: Foundation & Supabase Setup',
+        description: 'Scaffold React + Vite + Tailwind + shadcn/ui monorepo, configure Supabase project, setup email/social auth, and build profiles schema with RLS policies.',
+        targetQuarter: 'Phase 1',
+        isCompleted: false,
+        deliverable: 'Deployed foundational auth and profile directory'
+      },
+      {
+        id: 'ic-2',
+        title: 'Phase 2: Networking & Community Feed',
+        description: 'Build connection requests, directory search with skill filters, real-time messaging, and group feed with discussions and upvotes.',
+        targetQuarter: 'Phase 2',
+        isCompleted: false,
+        deliverable: 'Working social networking and messaging layer'
+      },
+      {
+        id: 'ic-3',
+        title: 'Phase 3: Collaboration Hub & NGO Board',
+        description: 'Develop project board for volunteer and open-source gigs, NGO needs board, and tag-based SQL skill matching.',
+        targetQuarter: 'Phase 3',
+        isCompleted: false,
+        deliverable: 'Interactive NGO needs board and application workflow'
+      },
+      {
+        id: 'ic-4',
+        title: 'Phase 4: Food Redistribution & Impact Dashboard',
+        description: 'Deploy food surplus listings, volunteer pickup claiming, and real-time impact dashboard aggregating hours, meals, and badges.',
+        targetQuarter: 'Phase 4',
+        isCompleted: false,
+        deliverable: 'Surplus food logistics and impact metrics dashboard'
+      },
+      {
+        id: 'ic-5',
+        title: 'Phase 5: Polish, CI/CD & Production Deployment',
+        description: 'Responsive dark/light polish, comprehensive documentation, good-first-issues triage, and deployment on Vercel and Supabase.',
+        targetQuarter: 'Phase 5',
+        isCompleted: false,
+        deliverable: 'Production deployment with 20+ active contributors'
+      }
+    ],
+    successCriteria: [
+      { metric: 'SWoC Contributors Engaged', target: '20+ Contributors', verificationMethod: 'GitHub contributor roster' },
+      { metric: 'Issues Closed', target: '25+ Issues', verificationMethod: 'Milestone tracking dashboard' },
+      { metric: 'Vetted NGO Needs Posted', target: '≥ 5 NGO Needs', verificationMethod: 'Database verified NGO listings' },
+      { metric: 'Surplus Meals Saved Tracked', target: '≥ 100 Meals', verificationMethod: 'Impact metrics ledger audit' }
+    ],
+    operationalDisclaimer: {
+      assumptions: [
+        'Vetted local NGOs and welfare networks are willing to adopt digital claiming for surplus food',
+        'Free tiers of Supabase and Vercel are sufficient for MVP season load'
+      ],
+      externalDependencies: [
+        'Supabase cloud infrastructure and Realtime WebSockets reliability',
+        'Accurate food safety guidelines acknowledged by participating donors and volunteers'
+      ],
+      governanceEthics: 'ImpactConnect is explicitly non-profit and privacy-first. Food listings require admin or NGO verification to prevent misuse, and commercial exploitation of volunteer labor is strictly barred by code of conduct.'
+    }
+  },
+  {
+    slug: 'devbridge',
+    title: 'DevBridge — Country-Aware Developer Opportunities & Verified Global Feed',
+    tagline: 'Open-source, country-aware platform unifying fragmented developer events, hackathons, scholarships, and opportunities into a single verified feed.',
+    primaryObjective: 'Eliminate information fragmentation so developers—especially in underrepresented regions—never miss verified hackathons, conferences, scholarships, jobs, and open-source programs.',
+    targetDemographic: 'Developers, students, event organizers, tech communities, and recruiters worldwide.',
+    provinces: ['South Asia & Underrepresented Regions', 'All 9 Provinces (Sri Lanka)', 'Global Developer Ecosystem'],
+    phase: 'Planned',
+    phaseIndex: 1,
+    sdgs: [4, 8, 9, 10, 17],
+    icon: 'Globe2',
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&auto=format&fit=crop&q=80',
+    isSWoC: true,
+    programBadge: 'SWoC Season 7 Proposal',
+    license: 'MIT',
+    repoUrl: 'https://github.com/shanaya-mahendran/devbridge',
+    role: 'Project Admin / Maintainer',
+    externalResources: [
+      { label: 'SWoC Complete Proposal', url: 'https://github.com/shanaya-mahendran/devbridge', type: 'brief' },
+      { label: 'Proposed GitHub Repository', url: 'https://github.com/shanaya-mahendran/devbridge', type: 'github' },
+      { label: 'Admin Approval & RLS Specs', url: '#', type: 'paper' }
+    ],
+    problem: {
+      overview: 'Developer opportunities are scattered across unsearchable WhatsApp groups, noisy LinkedIn algorithms, isolated Discord servers, and university emails. Developers in underrepresented regions miss out on life-changing global hackathons, scholarships, and open-source fellowships simply because they are not inside the right informal group chats.',
+      rootCauses: [
+        'Information silos: opportunities circulate in closed WhatsApp chats and private university email lists',
+        'Algorithm fatigue: LinkedIn and X prioritize engagement clicks rather than country-specific deadlines and eligibility',
+        'Unverified submissions & spam: informal social channels lack deadline tracking, verification, or duplicate detection',
+        'Regional exclusion: engineers outside major metropolitan hubs lack visibility into global grants and remote fellowships'
+      ],
+      sriLankaContext: 'In Sri Lanka and South Asia, student developers frequently discover premier hackathons, Google Summer of Code, or IEEE fellowships 48 hours after deadlines pass. Fragmented WhatsApp channels prevent students in regional universities from accessing the same opportunities available to students in Colombo or Kandy.',
+      impactMetrics: [
+        { stat: '100+', label: 'Event & Opportunity Submissions In Season 1' },
+        { stat: '50+', label: 'Admin-Verified & Approved Opportunities' },
+        { stat: '200+', label: 'Registered Developers in Regional Directory' },
+        { stat: '0 Missed', label: 'Country-Aware Deadline Push Notifications' }
+      ]
+    },
+    targetCommunity: {
+      personas: [
+        {
+          role: 'Regional Student Developers',
+          description: 'Undergraduates seeking hackathons, internships, scholarships, and open-source programs to build careers.',
+          painPoints: ['Missing deadlines due to fragmented WhatsApp forwards', 'Inability to filter opportunities applicable to their country']
+        },
+        {
+          role: 'Community Organizers & NGOs',
+          description: 'Tech community leaders and meetups looking to broadcast events to a verified, country-specific developer audience.',
+          painPoints: ['Low attendance due to platform noise', 'Manual promotion across a dozen fragmented channels']
+        },
+        {
+          role: 'Platform Admin & Reviewers',
+          description: 'Maintainers curating and verifying community submissions to prevent fraud and duplicates.',
+          painPoints: ['Spam submissions and fake events', 'Lack of audit logging for review decisions']
+        }
+      ],
+      accessibilityFocus: 'Zero-latency instant search, lightweight mobile layout, country toggle with auto-detection fallback, and RSS / Web Push notification compatibility.'
+    },
+    proposedSolution: {
+      summary: 'A unified open-source platform that accepts community event submissions, screens them through an admin approval dashboard, delivers a country-aware verified feed, sends real-time opportunity notifications, and maintains a public developer directory.',
+      operationalModel: 'Community-submitted and machine-screened events require human admin verification before publishing. Strict RLS ensures transparency, and a stretch AI service conducts spam scoring and fuzzy duplicate detection.',
+      citizenWorkflow: [
+        '1. Contributor submits opportunity with title, date, country, URL, and category tags',
+        '2. Admin approval dashboard reviews pending items, checks for duplicates, and approves with audit log',
+        '3. Users in matching countries receive in-app real-time alerts for relevant opportunities',
+        '4. Developers browse directory, connect with peers, and collaborate on hackathon submissions'
+      ],
+      keyInnovations: [
+        'Country-Aware Intelligent Feed: Automatically surfaces locally eligible hackathons, conferences, and fellowships',
+        'Admin Verification Queue: Dual-layer anti-spam workflow guaranteeing that zero fraudulent or broken-link events pollute the feed',
+        'Unified Opportunity Board: Harmonizes events, jobs, scholarships, CFPs, and open-source programs in one search index'
+      ]
+    },
+    architecture: {
+      summary: 'Built on React, Vite, Tailwind CSS, and shadcn/ui on the frontend; Supabase (PostgreSQL, Auth, Realtime, Edge Functions, Storage) on the backend; and an optional Python + FastAPI microservice with Playwright and scikit-learn for RSS scraping, duplicate detection, and spam scoring.',
+      stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Supabase (PostgreSQL, Auth, Realtime, Edge Functions)', 'Python', 'FastAPI', 'Playwright', 'scikit-learn'],
+      offlineFirstStrategy: 'Cached country feeds and bookmarked deadlines stored in client IndexedDB; full access to saved events during network disruptions.',
+      bandwidthOptimization: 'Normalized database queries; paginated opportunity feeds; Brotli compressed API payloads under 40KB.',
+      trilingualSupport: 'Trilingual UI localization strings; language tags on events allowing filtering by language of instruction.',
+      dataPrivacy: 'Strict Supabase RLS policies: user contact details shielded; profiles provide granular country privacy toggles.'
+    },
+    milestones: [
+      {
+        id: 'db-1',
+        title: 'Phase 1: Foundation & Profile Engine',
+        description: 'Scaffold React + Vite + Tailwind + shadcn/ui, configure Supabase project, setup auth, and build profiles with country tags.',
+        targetQuarter: 'Phase 1',
+        isCompleted: false,
+        deliverable: 'Auth and country-tagged profile system'
+      },
+      {
+        id: 'db-2',
+        title: 'Phase 2: Submission Form & Admin Dashboard',
+        description: 'Implement event submission form, admin approval/rejection queue with audit logging, and country-filtered feed.',
+        targetQuarter: 'Phase 2',
+        isCompleted: false,
+        deliverable: 'Operational submission and admin verification engine'
+      },
+      {
+        id: 'db-3',
+        title: 'Phase 3: Realtime Notifications & Opportunities Board',
+        description: 'Build in-app notifications via Supabase Realtime, filterable opportunities board (jobs, scholarships, CFPs), and deadline tracker.',
+        targetQuarter: 'Phase 3',
+        isCompleted: false,
+        deliverable: 'Realtime country alerts and opportunities board'
+      },
+      {
+        id: 'db-4',
+        title: 'Phase 4: Developer Directory & Networking',
+        description: 'Deploy developer directory with country and skill search, follow/connect mechanism, and direct messaging.',
+        targetQuarter: 'Phase 4',
+        isCompleted: false,
+        deliverable: 'Developer directory and peer networking layer'
+      },
+      {
+        id: 'db-5',
+        title: 'Phase 5: Polish, Docs & Stretch Scrapers',
+        description: 'Implement dark mode, good-first-issues, documentation pass, and stretch RSS/API scraper service with duplicate detection.',
+        targetQuarter: 'Phase 5',
+        isCompleted: false,
+        deliverable: 'Production v1.0 deployment on Vercel and Supabase'
+      }
+    ],
+    successCriteria: [
+      { metric: 'Contributors Engaged', target: '20+ Contributors', verificationMethod: 'GitHub PR contributor roster' },
+      { metric: 'Events Submitted & Verified', target: '≥ 50 Verified Events', verificationMethod: 'Database approval log audit' },
+      { metric: 'Registered Developers', target: '200+ Developers', verificationMethod: 'Verified profile registrations' },
+      { metric: 'Opportunities Board Items', target: '≥ 10 Active Opportunities', verificationMethod: 'Active deadline index count' }
+    ],
+    operationalDisclaimer: {
+      assumptions: [
+        'Tech event organizers and developers will submit opportunities once the platform is seeded',
+        'Admins adhere to the <48h review turnaround SLA to maintain feed freshness'
+      ],
+      externalDependencies: [
+        'Supabase Realtime service stability for push notifications',
+        'Public API / RSS feed compliance with terms of service for optional scraper stretch'
+      ],
+      governanceEthics: 'DevBridge enforces an explicit human-in-the-loop review policy: AI agents never auto-publish. All submissions must be verified by human admins. Predatory paid course spam and LinkedIn scraping are strictly prohibited.'
+    }
+  },
   {
     slug: 'community-smart-waste-network',
     title: 'Municipal Waste & Recyclables Route Optimiser',

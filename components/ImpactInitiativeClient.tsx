@@ -107,6 +107,26 @@ export default function ImpactInitiativeClient({ initiative }: Props) {
               )
             })}
 
+            {initiative.isSWoC && (
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  padding: '6px 14px',
+                  borderRadius: '30px',
+                  background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                  color: '#ffffff',
+                  fontSize: '0.8rem',
+                  fontWeight: 800,
+                  fontFamily: 'var(--font-mono)',
+                  boxShadow: '0 4px 14px rgba(16, 185, 129, 0.4)'
+                }}
+              >
+                ★ SWOC SEASON 7 PROPOSAL
+              </span>
+            )}
+
             <span
               style={{
                 display: 'inline-flex',
@@ -125,6 +145,72 @@ export default function ImpactInitiativeClient({ initiative }: Props) {
               ● {initiative.phase.toUpperCase()}
             </span>
           </div>
+
+          {/* SWoC Season 7 Proposal Metadata Banner */}
+          {initiative.isSWoC && (
+            <div
+              className="glass-panel"
+              style={{
+                padding: '20px 24px',
+                borderRadius: 'var(--radius)',
+                marginBottom: '28px',
+                border: '1px solid rgba(16, 185, 129, 0.35)',
+                background: 'rgba(16, 185, 129, 0.04)',
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                gap: '16px'
+              }}
+            >
+              <div>
+                <div style={{ fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)' }}>
+                  PROGRAM & SEASON
+                </div>
+                <div style={{ fontSize: '0.96rem', fontWeight: 700, color: '#34d399', marginTop: '2px' }}>
+                  Social Winter of Code · S7
+                </div>
+              </div>
+              <div>
+                <div style={{ fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)' }}>
+                  ROLE & STATUS
+                </div>
+                <div style={{ fontSize: '0.96rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '2px' }}>
+                  {initiative.role || 'Project Admin / Maintainer'}
+                </div>
+              </div>
+              <div>
+                <div style={{ fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)' }}>
+                  OPEN SOURCE LICENSE
+                </div>
+                <div style={{ fontSize: '0.96rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '2px' }}>
+                  {initiative.license || 'MIT License'}
+                </div>
+              </div>
+              {initiative.repoUrl && (
+                <div>
+                  <div style={{ fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)' }}>
+                    TARGET REPOSITORY
+                  </div>
+                  <a
+                    href={initiative.repoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      fontSize: '0.86rem',
+                      fontWeight: 600,
+                      color: 'var(--accent)',
+                      textDecoration: 'none',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      marginTop: '2px'
+                    }}
+                  >
+                    View on GitHub <ExternalLink size={13} />
+                  </a>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Title & Tagline */}
           <h1
@@ -292,7 +378,7 @@ export default function ImpactInitiativeClient({ initiative }: Props) {
           />
         </div>
 
-        {/* ── SECTION 3: THE PROBLEM IN SRI LANKA ── */}
+        {/* ── SECTION 3: THE PROBLEM & CONTEXT ── */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -301,7 +387,9 @@ export default function ImpactInitiativeClient({ initiative }: Props) {
           style={{ marginBottom: '64px' }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-            <span style={{ fontSize: '0.85rem', fontFamily: 'var(--font-mono)', color: 'var(--accent)' }}>01 // SYSTEMIC PROBLEM IN SRI LANKA</span>
+            <span style={{ fontSize: '0.85rem', fontFamily: 'var(--font-mono)', color: 'var(--accent)' }}>
+              {initiative.isSWoC ? '01 // PROBLEM STATEMENT & ECOSYSTEM NEED' : '01 // SYSTEMIC PROBLEM IN SRI LANKA'}
+            </span>
           </div>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px' }}>
             The Root Challenge
@@ -311,7 +399,7 @@ export default function ImpactInitiativeClient({ initiative }: Props) {
             {initiative.problem.overview}
           </p>
 
-          {/* Sri Lanka Specific Context */}
+          {/* Ecosystem Context */}
           <div
             className="glass-panel"
             style={{
@@ -321,7 +409,7 @@ export default function ImpactInitiativeClient({ initiative }: Props) {
             }}
           >
             <div style={{ fontSize: '0.8rem', fontFamily: 'var(--font-mono)', color: '#fbbf24', marginBottom: '6px' }}>
-              SRI LANKAN ECONOMIC & GEOGRAPHIC CONTEXT
+              {initiative.isSWoC ? 'REGIONAL & ECOSYSTEM CONTEXT' : 'SRI LANKAN ECONOMIC & GEOGRAPHIC CONTEXT'}
             </div>
             <p style={{ fontSize: '0.96rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
               {initiative.problem.sriLankaContext}
@@ -376,7 +464,9 @@ export default function ImpactInitiativeClient({ initiative }: Props) {
           style={{ marginBottom: '64px' }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-            <span style={{ fontSize: '0.85rem', fontFamily: 'var(--font-mono)', color: 'var(--accent)' }}>02 // END-USER PERSONAS & DIGNITY</span>
+            <span style={{ fontSize: '0.85rem', fontFamily: 'var(--font-mono)', color: 'var(--accent)' }}>
+              {initiative.isSWoC ? '02 // TARGET CONTRIBUTORS & BENEFICIARIES' : '02 // END-USER PERSONAS & DIGNITY'}
+            </span>
           </div>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '24px' }}>
             Target Community & Beneficiaries
