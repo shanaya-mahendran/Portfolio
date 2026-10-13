@@ -42,6 +42,8 @@ export default function Navbar() {
     { href: '/about', label: 'About' },
     { href: '/education', label: 'Education' },
     { href: '/projects', label: 'Projects' },
+    { href: '/arena', label: 'Arena' },
+    { href: '/impact', label: 'Impact & SDGs' },
     { href: '/skills', label: 'Skills' },
     // { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
@@ -66,19 +68,20 @@ export default function Navbar() {
           </Link>
           
           {/* Desktop Nav */}
-          <ul className="nav-links desktop-only" style={{ display: 'flex', gap: '20px', listStyle: 'none', margin: 0 }}>
+          <ul className="nav-links desktop-only" style={{ display: 'flex', gap: '12px', listStyle: 'none', margin: 0 }}>
             {navLinks.map((link) => {
-              const isActive = pathname === link.href
+              const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
               return (
                 <li key={link.href} style={{ position: 'relative' }}>
                   <Link
                     href={link.href}
                     style={{
-                      padding: '8px 12px',
+                      padding: '6px 10px',
                       color: isActive ? 'var(--text-primary)' : 'var(--text-secondary)',
                       fontWeight: isActive ? 600 : 500,
                       transition: 'color 0.2s ease',
-                      display: 'block'
+                      display: 'block',
+                      fontSize: '0.9rem'
                     }}
                   >
                     {link.label}
