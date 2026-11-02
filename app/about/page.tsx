@@ -7,33 +7,6 @@ import { Download, BookOpen, Music, Activity, Sprout, Zap, Globe2, HeartHandshak
 const DATA = {
   timeline: [
     {
-      date: 'Oct 2026 – Present',
-      title: 'Backend Engineering Intern | DevConnect',
-      descriptions: [
-        'Currently applying a rigorous, assessment-based backend engineering foundation in a real-world production environment at DevConnect. I bring a deep understanding of the full backend lifecycle—from API design and database integrity to security, reliability, and deployment—to build secure, scalable, and production-ready server-side applications.',
-        '• API Architecture & Design: Designing RESTful APIs with proper resource modeling, HTTP semantics, and status codes. Implementing robust boundary validation, multi-audience error handling, and idempotency to prevent duplicate operations.',
-        '• Security & Authentication: Implementing secure authentication (sessions vs. tokens), authorization checks, password hashing (and breach mitigation strategies), rate limiting, and abuse prevention.',
-        '• Database Engineering & Data Integrity: Designing relational schemas, writing performant SQL, and solving N+1 query problems using indexes. Managing atomic transactions, concurrency issues (lost updates, check-then-act traps), and cursor-based pagination.',
-        '• System Reliability & Performance: Implementing caching strategies (handling invalidation and thundering herds), background job queues, and structured logging/metrics for observability.',
-        '• DevOps & Deployment: Managing environment configurations, secrets, safe schema migrations (expand-migrate-contract), and deploying consistent builds across environments.',
-        '• Professional Practices: Conducting peer code reviews, writing developer-friendly documentation, and contributing to a collaborative engineering team.'
-      ]
-    },
-    {
-      date: 'Oct 2026 – Present',
-      title: 'Frontend Engineering Intern | DevConnect',
-      descriptions: [
-        'Currently applying a rigorous, assessment-based frontend engineering foundation in a real-world production environment at DevConnect. I bring a deep understanding of the full frontend lifecycle—from semantic document structure and responsive layout design to state management, API integration, and deployment—to build accessible, performant, and production-ready user interfaces.',
-        '• Modern Layout & Architecture: Implementing semantic HTML and advanced CSS (Flexbox, Grid, positioning) to build responsive, cross-device layouts.',
-        '• TypeScript at the Boundary: Applying TypeScript where it adds value, enforcing types at API boundaries, and avoiding the pitfalls of any.',
-        '• Accessibility & UX: Building layouts that work for everyone, including keyboard navigation, focus indicators, and responsive behavior. Writing forms with proper labels, validation, and helpful error messages.',
-        '• State Management & API Integration: Distinguishing and handling the three core states (loading, error, empty). Managing API failure, implementing retries, and preventing race conditions.',
-        '• React & JavaScript Fundamentals: Optimizing React re-renders (keys, dependency arrays, effects) and mastering JavaScript semantics (closures, array mutations, equality checks) to write bug-free code.',
-        '• Testing & Team Workflows: Writing meaningful tests with solid assertions, conducting pull requests and peer reviews, and building a verifiable GitHub contribution history.',
-        '• Deployment & DevOps: Managing environment variables, preventing secrets from reaching the browser, and ensuring deployments survive build vs. runtime differences.'
-      ]
-    },
-    {
       date: 'May 2026 - Present',
       title: 'Open Source Contributor — Social Summer of Code 2026',
       descriptions: [
