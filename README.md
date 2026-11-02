@@ -13,7 +13,12 @@ A modern, high-performance personal portfolio built with Next.js App Router, Rea
   - Single-accordion card expansion for clean timeline navigation.
 - **Programmes, Volunteering & Achievements**:
   - **IEEE Computer Society R10 Summer School 2026** — Completed; Team Leader of HungryBeast, 3rd Place in Mini Ideathon with **SmartPark**.
-  - **OMLAS Champion 2026** — One Million Leaders Asia (*Almost Completed*).
+  - **IntelliCon '26 Buildathon** — Top 16 Finalist; Full-Stack Developer on Team HungryBeast's **Passion Discovery Engine**.
+  - **The Oracle Challenge (Cre8X 3.0)** — UI/UX Designer on Legacy Aurora's **Smart Travel · Earth**, a Sri Lanka 2100 multimodal mobility concept; not selected to advance.
+  - **Tech-Triathlon 2026 Designathon** — Team Lead and Full-Stack Developer on Legacy Aurora's **Waypoint Dispatch Intelligence**; not selected to advance.
+  - **InnovaX 1.0** — Submitted **PathfinderAI** proposal as a member of Legacy Aurora, focused on agentic skill verification and candidate feedback.
+  - **SDG Sprints 2026 Stage 02** — Team Member of Legacy Aurora on four proposals: **CivicLens** (civic reporting), **DigiEdu** (offline digital literacy), **EcoChain Lanka** (community recycling), and **SkillLink Lanka** (verified trades marketplace).
+  - **OMLAS Champion 2026** — One Million Leaders Asia (*Completed*).
   - **National Entrepreneurship Development Programme (NEDP Phase 3)** — National Innovation Agency / UoM / Union Bank (*Completed, Jun–Oct 2026*).
   - **1st International Sustainable Research Symposium 2026** — Volunteer (TRACE Expert City).
   - **DevConnect Ambassador** — DevConnect (*Active*).
@@ -85,4 +90,3 @@ Deployed seamlessly on [Vercel](https://vercel.com/).
 ## 📄 License
 
 This project is licensed under the [ISC](LICENSE) License.
-

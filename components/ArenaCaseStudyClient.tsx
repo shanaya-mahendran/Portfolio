@@ -34,6 +34,7 @@ interface Props {
 export default function ArenaCaseStudyClient({ entry }: Props) {
   const [copiedCode, setCopiedCode] = useState(false)
   const isPodium = entry.category === 'PODIUM'
+  const isFinalist = entry.category === 'FINALIST'
   const isAttempt = entry.category === 'ATTEMPT'
   const isLab = entry.category === 'LAB'
 
@@ -90,11 +91,11 @@ export default function ArenaCaseStudyClient({ entry }: Props) {
           <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
             <span
               className={`arena-ribbon ${
-                isPodium ? 'ribbon-podium' : isAttempt ? 'ribbon-attempt' : 'ribbon-lab'
+                isPodium ? 'ribbon-podium' : isFinalist ? 'ribbon-finalist' : isAttempt ? 'ribbon-attempt' : 'ribbon-lab'
               }`}
               style={{ position: 'static' }}
             >
-              {isPodium ? '🏆 PODIUM FINISH' : isAttempt ? '⚔️ THE ATTEMPT' : '🧪 EXPERIMENTAL LAB'}
+              {isPodium ? '🏆 PODIUM FINISH' : isFinalist ? 'FINALIST' : isAttempt ? '⚔️ THE ATTEMPT' : '🧪 EXPERIMENTAL LAB'}
             </span>
 
             <span
@@ -201,7 +202,7 @@ export default function ArenaCaseStudyClient({ entry }: Props) {
               <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', textTransform: 'uppercase' }}>
                 Outcome Status
               </div>
-              <div style={{ fontSize: '0.98rem', fontWeight: 600, color: isPodium ? '#fbbf24' : isAttempt ? '#f87171' : '#a78bfa', marginTop: '4px' }}>
+              <div style={{ fontSize: '0.98rem', fontWeight: 600, color: isPodium ? '#fbbf24' : isFinalist ? '#60a5fa' : isAttempt ? '#f87171' : '#a78bfa', marginTop: '4px' }}>
                 {entry.outcomeStatus}
               </div>
             </div>
@@ -367,7 +368,7 @@ export default function ArenaCaseStudyClient({ entry }: Props) {
               }}
             >
               <h4 style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', color: '#f87171', marginBottom: '14px' }}>
-                <Flame size={16} /> Unforeseen Pressure Factors
+                <Flame size={16} />                 Open Risks & Pressure Factors
               </h4>
               <ul style={{ paddingLeft: '18px', display: 'flex', flexDirection: 'column', gap: '10px', color: 'var(--text-secondary)', fontSize: '0.88rem' }}>
                 {entry.challenge.sprintConstraints.pressureFactors.map((p, i) => (
@@ -465,29 +466,31 @@ export default function ArenaCaseStudyClient({ entry }: Props) {
           </p>
 
           {/* Tech Stack Pills */}
-          <div style={{ marginBottom: '28px' }}>
-            <div style={{ fontSize: '0.8rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '10px' }}>
-              SYSTEM TECHNOLOGY STACK
+          {entry.solution.stack.length > 0 && (
+            <div style={{ marginBottom: '28px' }}>
+              <div style={{ fontSize: '0.8rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '10px' }}>
+                SYSTEM TECHNOLOGY STACK
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                {entry.solution.stack.map(s => (
+                  <span
+                    key={s}
+                    style={{
+                      padding: '6px 14px',
+                      borderRadius: '8px',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid var(--border-color)',
+                      fontSize: '0.85rem',
+                      fontFamily: 'var(--font-mono)',
+                      color: 'var(--text-primary)'
+                    }}
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-              {entry.solution.stack.map(s => (
-                <span
-                  key={s}
-                  style={{
-                    padding: '6px 14px',
-                    borderRadius: '8px',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    border: '1px solid var(--border-color)',
-                    fontSize: '0.85rem',
-                    fontFamily: 'var(--font-mono)',
-                    color: 'var(--text-primary)'
-                  }}
-                >
-                  {s}
-                </span>
-              ))}
-            </div>
-          </div>
+          )}
 
           {/* Architecture Overview */}
           <div
@@ -589,10 +592,10 @@ export default function ArenaCaseStudyClient({ entry }: Props) {
           style={{ marginBottom: '64px' }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-            <span style={{ fontSize: '0.85rem', fontFamily: 'var(--font-mono)', color: 'var(--accent)' }}>04 // POST-MORTEM & REFLECTION</span>
+            <span style={{ fontSize: '0.85rem', fontFamily: 'var(--font-mono)', color: 'var(--accent)' }}>04 // RETROSPECTIVE</span>
           </div>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '24px' }}>
-            The Retrospective: What Worked & What Failed
+            The Retrospective: What Worked & What Needs Work
           </h2>
 
           <div className="retro-grid">
@@ -614,7 +617,7 @@ export default function ArenaCaseStudyClient({ entry }: Props) {
             {/* What Broke / Failed */}
             <div className="retro-col retro-failed">
               <h3 style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.15rem', color: '#f87171' }}>
-                <XCircle size={20} /> What Broke Under Pressure
+                <XCircle size={20} /> What Still Needs Work
               </h3>
               <ul className="retro-list">
                 {entry.retrospective.whatFailed.map((item, i) => (

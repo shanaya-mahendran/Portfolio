@@ -24,7 +24,12 @@
   - BSc in Computer Science at University of the People (CGPA: 3.96)
 - **Primary Tech Stack**: Next.js, React, TypeScript, JavaScript, Python, FastAPI, Node.js, Express, Prisma ORM, Supabase, PostgreSQL, MySQL, SQLite, Docker, Tailwind CSS.
 - **Featured Projects**:
-  - SmartPark: 3rd Place winner at IEEE CS R10 Summer School 2026 Mini Ideathon (HungryBeast). Predictive parking, fairness, and offline-first systems.
+  - SmartPark OGF: Third place at IEEE CS R10 Summer School 2026 Mini Ideathon (HungryBeast). Predictive parking, computer vision, fair prorated billing, and an offline-capable driver PWA.
+  - Smart Travel · Earth: The Oracle Challenge (Cre8X 3.0) submission by Legacy Aurora. UI/UX Designer; a sustainable multimodal mobility concept for Sri Lanka 2100; not selected to advance.
+  - PathfinderAI: InnovaX 1.0 proposal submitted by Legacy Aurora. Candidate-centered agentic recruitment and skill verification; AI scorecards are advisory and final hiring decisions stay with people.
+  - SDG Sprints 2026 Stage 02: Four Legacy Aurora proposals—CivicLens (civic service reporting), DigiEdu (offline-first digital literacy), EcoChain Lanka (QR-verified recycling network), and SkillLink Lanka (verified informal-worker marketplace). All are proposals in progress, not completed deployments.
+  - The Passion Discovery Engine: Top 16 finalist at IntelliCon '26 Buildathon (HungryBeast). Full-Stack Developer on a student career-discovery platform.
+  - Waypoint Dispatch Intelligence: Tech-Triathlon 2026 Designathon submission by team Legacy Aurora. Team Lead and Full-Stack Developer; not selected to advance.
   - Smart School Management System (SSMS): Enterprise-grade multi-role school management system (Admin, Teacher, Student, Parent) built with Next.js 14, Prisma, Supabase PostgreSQL, Tailwind CSS, and client-side PDF document generation.
   - Sara: Full-stack e-commerce platform built with FastAPI + PostgreSQL, Docker, FAISS vector search, WebSockets, and Vite frontend.
   - CabXpert: Vehicle reservation system using Java EE (Jersey JAX-RS), MySQL, JDBC, and Bootstrap.
@@ -32,7 +37,7 @@
   - PTET Web: Open-source contribution (43 merged PRs) building backend APIs and full-stack features.
 - **Programmes & Leadership**:
   - IEEE Computer Society R10 Summer School 2026 (Completed, University of Moratuwa)
-  - OMLAS Champion 2026 (One Million Leaders Asia — Almost Completed)
+  - OMLAS Champion 2026 (One Million Leaders Asia, Completed)
   - National Entrepreneurship Development Programme (NEDP Phase 3 — Completed, June–Oct 2026)
 - **Volunteering**:
   - Volunteer — 1st International Sustainable Research Symposium 2026 (TRACE Expert City)
@@ -40,5 +45,5 @@
   - Social Media Coordinator — Y2NPro Project (IEEE Young Professionals Sri Lanka)
 - **Achievements & Awards**:
   - 3rd Place — Trustworthy Smart Ecosystem Mini Ideathon (IEEE CS R10 Summer School 2026, Team Leader, HungryBeast)
+  - Top 16 Finalist — IntelliCon '26 Buildathon (Full-Stack Developer, HungryBeast, Passion Discovery Engine)
   - First Place Gold Medalist — 1st Alliance Cup Full Contact Karate 2025 (UWMF-Japan)
-

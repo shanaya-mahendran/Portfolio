@@ -37,12 +37,60 @@ This file provides the complete, unabridged plain-text knowledge base for Shanay
 
 ## 3. Projects Catalog
 
-### SmartPark | IEEE CS Sri Lanka R10 Summer School 2026
+### SmartPark OGF | IEEE CS Sri Lanka R10 Summer School 2026
 - **Status**: Completed / 3rd Place Mini Ideathon
 - **Role**: Team Leader, HungryBeast
 - **Category**: Smart Systems / IoT / Full-Stack
-- **Focus**: Predictive parking, fairness algorithms, and offline-first systems
+- **Focus**: One Galle Face demand forecasting, fair prorated billing, CCTV-based computer vision, and an offline-capable driver PWA
 - **Description**: Intelligent parking system developed during the IEEE Computer Society Region 10 Summer School 2026 at University of Moratuwa. Led team HungryBeast to 3rd place in the Trustworthy Smart Ecosystem Mini Ideathon.
+
+### Waypoint Dispatch Intelligence | Tech-Triathlon 2026 Designathon
+- **Status**: Submitted; not selected to advance
+- **Role**: Team Lead and Full-Stack Developer, Legacy Aurora
+- **Category**: Delivery Operations / Product Design
+- **Description**: A shared delivery-operations concept connecting dispatchers, drivers, loaders, and store managers through role-specific views of one delivery record, including offline-first driver updates.
+
+### Smart Travel · Earth | The Oracle Challenge (Cre8X 3.0)
+- **Status**: Submitted; not selected to advance
+- **Role**: UI/UX Designer, Legacy Aurora
+- **Category**: Sustainable Multimodal Mobility / Sri Lanka 2100
+- **Description**: A future mobility concept combining eVTOL, MagLev, autonomous rapid transit, HyperTube, and GetIn shared pods with a journey timeline, live radar map, traveler hazard reporting, Oracle AI insights, simulated monsoon rerouting, and accessible text directions.
+- **Technology**: HTML5, CSS3, JavaScript, Canvas 2D, MapLibre GL JS, Web Audio API, Progressive Web App.
+
+### PathfinderAI | InnovaX 1.0
+- **Status**: Proposal submitted
+- **Role**: Team Member, Legacy Aurora
+- **Category**: Agentic AI / Recruitment / Skill Verification
+- **Description**: A proposed B2B2C platform using adaptive roleplay interviews and job simulations to provide advisory competency scorecards for employers and actionable practice feedback for candidates. The proposal keeps hiring decisions under human control and describes multilingual support and privacy safeguards.
+- **Proposed technology**: Next.js, React, Tailwind CSS, shadcn/ui, FastAPI, Node.js, LangGraph, OpenAI or Gemini APIs, ChromaDB, and PostgreSQL.
+
+### CivicLens | SDG Sprints 2026 Stage 02
+- **Status**: Stage 02 in progress; proposal by Legacy Aurora
+- **Role**: Team Member
+- **Category**: Civic Technology / SDG 16
+- **Description**: A web-first civic reporting concept for Sri Lanka that proposes computer-vision report validation, PostGIS duplicate clustering, council ticket workflows, SLA escalation, and public service scorecards.
+- **Proposed technology**: Next.js 14, FastAPI, PostgreSQL/PostGIS, Redis, Celery, computer vision, and object storage.
+
+### DigiEdu | SDG Sprints 2026 Stage 02
+- **Status**: Stage 02 in progress; proposal by Legacy Aurora
+- **Role**: Team Member
+- **Category**: Digital Literacy / SDGs 4 and 10
+- **Description**: An offline-first digital literacy and train-the-trainer PWA for rural and estate communities, with Sinhala and Tamil lessons, audio narration, quizzes, guided simulations, and trainer resources.
+- **Proposed technology**: Next.js PWA, Workbox service workers, IndexedDB/Dexie.js, FastAPI, PostgreSQL/Supabase, and a headless CMS.
+
+### EcoChain Lanka | SDG Sprints 2026 Stage 02
+- **Status**: Stage 02 in progress; proposal by Legacy Aurora
+- **Role**: Team Member
+- **Category**: Recycling / SDGs 8, 11, 12, and 13
+- **Description**: A peer-to-peer waste collection concept connecting households, informal collectors, scrap yards, and brands through QR-verified pickups, collector routing, dynamic local pricing, and recovery reporting.
+- **Proposed technology**: Next.js PWA, FastAPI, PostgreSQL/PostGIS, Supabase, OpenStreetMap/OSRM, QR scanning, service workers, and IndexedDB.
+
+### SkillLink Lanka | SDG Sprints 2026 Stage 02
+- **Status**: Stage 02 in progress; proposal by Legacy Aurora
+- **Role**: Team Member
+- **Category**: Informal Work / SDGs 8 and 10
+- **Description**: A secure mobile-first marketplace and verified skill portfolio for informal tradespeople, proposing tiered worker verification, private communication, LankaQR escrow, ratings, and dispute resolution.
+- **Proposed technology**: Next.js PWA, FastAPI, PostgreSQL/PostGIS, WebSockets, WebRTC, object storage, NIC OCR/e-KYC, TVEC/NVQ verification, and LankaQR/LankaPay integrations.
 
 ### Smart School Management System (SSMS)
 - **Status**: Under Progress / Active Development
@@ -206,13 +254,13 @@ This file provides the complete, unabridged plain-text knowledge base for Shanay
 - **Status**: Completed
 - **Organization**: IEEE Computer Society Sri Lanka Chapter | University of Moratuwa, Sri Lanka
 - **Overview**: Four-day intensive summer school covering Trustworthy Smart Ecosystems, IoT, AI, Cybersecurity, Mini Ideathon, and team project development.
-- **Achievement & Role**: Team Leader of HungryBeast, securing 3rd place in the Trustworthy Smart Ecosystem Mini Ideathon with the SmartPark project (predictive parking, fairness, and offline-first systems).
+- **Achievement & Role**: Team Leader of HungryBeast, placing third in the Trustworthy Smart Ecosystem Mini Ideathon with SmartPark OGF, a predictive parking proposal featuring computer vision and fair prorated billing.
 
 ### OMLAS Champion 2026
-- **Period**: August 2026 – Present
-- **Status**: Almost Completed
+- **Period**: 2026
+- **Status**: Completed
 - **Organization**: One Million Leaders Asia (OMLAS) | South & Southeast Asia
-- **Overview**: International leadership program focused on Personal Leadership, Sustainable Development, Social Innovation, Community Leadership, and Collaboration.
+- **Overview**: Completed international leadership programme focused on Personal Leadership, Sustainable Development, Social Innovation, Community Leadership, and Collaboration.
 
 ### National Entrepreneurship Development Programme (NEDP) – Phase 3
 - **Period**: June 2026 – October 2026
@@ -240,7 +288,13 @@ This file provides the complete, unabridged plain-text knowledge base for Shanay
 - **Date**: September 2026
 - **Organization**: IEEE Computer Society Sri Lanka Chapter | IEEE CS R10 Summer School 2026
 - **Role**: Team Leader, HungryBeast
-- **Overview**: 3rd place award for SmartPark, pitching predictive parking, fairness algorithms, and offline-first architectures.
+- **Overview**: Third-place result for SmartPark OGF, a predictive parking proposal for One Galle Face with demand forecasting, computer vision, an offline-capable driver experience, and fair prorated billing.
+
+### Top 16 Finalist – IntelliCon '26 Buildathon
+- **Date**: 2026
+- **Organization**: AIESEC in SLIIT
+- **Role**: Full-Stack Developer, HungryBeast
+- **Project**: The Passion Discovery Engine, a mobile-first career discovery platform using AI-guided work simulations and adaptive skill mapping.
 
 ### First Place (Gold Medal) – 1st Alliance Cup Full Contact Karate 2025
 - **Date**: November 2025
