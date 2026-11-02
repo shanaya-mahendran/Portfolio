@@ -25,7 +25,7 @@ import {
 import { ARENA_ENTRIES, ArenaEntry } from '@/lib/arenaData'
 
 export default function ArenaPage() {
-  const [selectedCategory, setSelectedCategory] = useState<'ALL' | 'PODIUM' | 'ATTEMPT' | 'LAB'>('ALL')
+  const [selectedCategory, setSelectedCategory] = useState<'ALL' | 'PODIUM' | 'FINALIST' | 'ATTEMPT' | 'LAB'>('ALL')
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedYear, setSelectedYear] = useState<string>('ALL')
   const [selectedStatus, setSelectedStatus] = useState<string>('ALL')
@@ -75,6 +75,7 @@ export default function ArenaPage() {
   // Aggregate stats
   const totalBuilds = ARENA_ENTRIES.length
   const podiumCount = ARENA_ENTRIES.filter(e => e.category === 'PODIUM').length
+  const finalistCount = ARENA_ENTRIES.filter(e => e.category === 'FINALIST').length
   const attemptCount = ARENA_ENTRIES.filter(e => e.category === 'ATTEMPT').length
   const labCount = ARENA_ENTRIES.filter(e => e.category === 'LAB').length
 
@@ -139,6 +140,12 @@ export default function ArenaPage() {
                 PODIUM FINISHES
               </div>
             </div>
+            <div className="stats-counter-card" style={{ borderColor: 'rgba(96, 165, 250, 0.4)' }}>
+              <div className="stats-num" style={{ color: '#60a5fa' }}>{finalistCount}</div>
+              <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}>
+                FINALIST BUILDS
+              </div>
+            </div>
             <div className="stats-counter-card" style={{ borderColor: 'rgba(239, 68, 68, 0.4)' }}>
               <div className="stats-num" style={{ color: '#f87171' }}>{attemptCount} ⚔️</div>
               <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}>
@@ -173,6 +180,12 @@ export default function ArenaPage() {
               className={`tab-btn ${selectedCategory === 'PODIUM' ? 'active' : ''}`}
             >
               <Trophy size={16} color="#fbbf24" /> Podium Finishes ({podiumCount})
+            </button>
+            <button
+              onClick={() => setSelectedCategory('FINALIST')}
+              className={`tab-btn ${selectedCategory === 'FINALIST' ? 'active' : ''}`}
+            >
+              <Sparkles size={16} color="#60a5fa" /> Finalists ({finalistCount})
             </button>
             <button
               onClick={() => setSelectedCategory('ATTEMPT')}
@@ -356,6 +369,7 @@ export default function ArenaPage() {
             >
               {filteredEntries.map((entry, index) => {
                 const isPodium = entry.category === 'PODIUM'
+                const isFinalist = entry.category === 'FINALIST'
                 const isAttempt = entry.category === 'ATTEMPT'
                 const isLab = entry.category === 'LAB'
 
@@ -389,10 +403,10 @@ export default function ArenaPage() {
                       {/* Category Ribbon */}
                       <div
                         className={`arena-ribbon ${
-                          isPodium ? 'ribbon-podium' : isAttempt ? 'ribbon-attempt' : 'ribbon-lab'
+                          isPodium ? 'ribbon-podium' : isFinalist ? 'ribbon-finalist' : isAttempt ? 'ribbon-attempt' : 'ribbon-lab'
                         }`}
                       >
-                        {isPodium ? '🏆 PODIUM' : isAttempt ? '⚔️ ATTEMPT' : '🧪 LAB POC'}
+                        {isPodium ? '🏆 PODIUM' : isFinalist ? 'FINALIST' : isAttempt ? '⚔️ ATTEMPT' : '🧪 LAB POC'}
                       </div>
 
                       {/* Outcome Badge */}
@@ -630,6 +644,8 @@ export default function ArenaPage() {
                   className={`arena-ribbon ${
                     quickViewEntry.category === 'PODIUM'
                       ? 'ribbon-podium'
+                      : quickViewEntry.category === 'FINALIST'
+                      ? 'ribbon-finalist'
                       : quickViewEntry.category === 'ATTEMPT'
                       ? 'ribbon-attempt'
                       : 'ribbon-lab'

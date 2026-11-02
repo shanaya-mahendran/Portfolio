@@ -1863,6 +1863,12 @@ textarea.form-control {
     box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
 }
 
+.ribbon-finalist {
+    background: rgba(59, 130, 246, 0.88);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35);
+}
+
 .ribbon-attempt {
     background: rgba(239, 68, 68, 0.85);
     color: #fff;
