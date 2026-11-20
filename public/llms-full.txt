@@ -274,6 +274,23 @@ This file provides the complete, unabridged plain-text knowledge base for Shanay
 - **Organization**: TRACE Expert City
 - **Overview**: Supported smooth event operations, schedule monitoring, and speaker/participant coordination at the 1st International Sustainable Research Symposium 2026.
 
+### FestX 7.0
+- **Period**: November 2026–Present
+- **Role**: Program Committee
+- **Organization**: IEEE WIE Student Branch Affinity Group, University of Moratuwa
+- **Overview**: Supporting event planning and programme coordination.
+
+### Road to Legacy 3.0
+- **Period**: November 2026–Present
+- **Role**: Design Team
+- **Overview**: Contributing to creative design and event branding.
+
+### TRACE University Representative
+- **Period**: November 2026–Present
+- **Role**: University Representative
+- **Organization**: TRACE
+- **Overview**: Supporting university-level representation and engagement.
+
 ### DevConnect Ambassador
 - **Period**: October 2026 – Present
 - **Organization**: DevConnect

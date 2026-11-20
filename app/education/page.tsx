@@ -158,6 +158,48 @@ const PROGRAMMES = [
 
 const VOLUNTEERING = [
   {
+    id: 'festx-7-program-committee',
+    title: 'Program Committee',
+    org: 'FestX 7.0 | IEEE WIE Student Branch Affinity Group, University of Moratuwa',
+    period: 'November 2026 – Present',
+    status: 'Active',
+    statusColor: '#3b82f6',
+    icon: '🎪',
+    description: 'Serving on the Program Committee for FestX 7.0, supporting event planning and programme coordination for the IEEE Women in Engineering Student Branch Affinity Group at the University of Moratuwa.',
+    activities: [
+      'Supporting event planning and programme coordination',
+      'Contributing to the organization of FestX 7.0',
+    ],
+  },
+  {
+    id: 'road-to-legacy-3-design-team',
+    title: 'Design Team',
+    org: 'Road to Legacy 3.0',
+    period: 'November 2026 – Present',
+    status: 'Active',
+    statusColor: '#3b82f6',
+    icon: '🎨',
+    description: 'Contributing to the creative design and event branding for Road to Legacy 3.0.',
+    activities: [
+      'Creating design materials for the event',
+      'Supporting the visual branding of Road to Legacy 3.0',
+    ],
+  },
+  {
+    id: 'trace-university-representative',
+    title: 'University Representative',
+    org: 'TRACE',
+    period: 'November 2026 – Present',
+    status: 'Active',
+    statusColor: '#3b82f6',
+    icon: '🏛️',
+    description: 'Representing the university and supporting engagement with TRACE at the university level.',
+    activities: [
+      'Representing the university in TRACE-related engagement',
+      'Supporting communication and participation at the university level',
+    ],
+  },
+  {
     id: 'research-symposium',
     title: 'Volunteer',
     org: '1st International Sustainable Research Symposium 2026 | TRACE Expert City',

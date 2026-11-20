@@ -21,6 +21,9 @@ A modern, high-performance personal portfolio built with Next.js App Router, Rea
   - **OMLAS Champion 2026** — One Million Leaders Asia (*Completed*).
   - **National Entrepreneurship Development Programme (NEDP Phase 3)** — National Innovation Agency / UoM / Union Bank (*Completed, Jun–Oct 2026*).
   - **1st International Sustainable Research Symposium 2026** — Volunteer (TRACE Expert City).
+  - **FestX 7.0** — Program Committee member; event planning and programme coordination (IEEE WIE Student Branch Affinity Group, University of Moratuwa; November 2026–Present).
+  - **Road to Legacy 3.0** — Design Team; creative design and event branding (November 2026–Present).
+  - **TRACE** — University Representative; university-level representation and engagement (November 2026–Present).
   - **DevConnect Ambassador** — DevConnect (*Active*).
   - **IEEE Young Professionals Sri Lanka** — Y2NPro Social Media Coordinator.
   - **1st Alliance Cup Full Contact Karate 2025** — Gold Medalist (UWMAFS SL / UWMF Japan).
